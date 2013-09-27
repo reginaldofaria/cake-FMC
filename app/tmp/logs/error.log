@@ -1,0 +1,436 @@
+2013-09-25 14:29:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => 'Usermgmt',
+)
+Request URL: /fmc/usermgmt/css/umstyle.css?q=12345678
+Stack Trace:
+#0 /var/www/fmc/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-25 14:29:38 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /fmc/img/panel-content.png
+Stack Trace:
+#0 /var/www/fmc/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-25 13:49:21 Error: [MissingActionException] Action UsersController::<pre class=() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => '<pre class=',
+)
+Request URL: /fmc/usermgmt/Users/%3Cpre%20class=
+Stack Trace:
+#0 /var/www/fmc/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/fmc/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/fmc/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-25 15:18:09 Error: Fatal Error (4): syntax error, unexpected '<' in [/var/www/fmc/app/View/Layouts/default.ctp, line 56]
+2013-09-25 15:18:09 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /fmc/usermgmt/Users/editProfile
+Stack Trace:
+#0 /var/www/fmc/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/fmc/ap...', 56)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/fmc/ap...', 56, Array)
+#2 /var/www/fmc/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/fmc/ap...', 56, Array)
+#3 /var/www/fmc/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-25 16:16:23 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /fmc/admin/login
+Stack Trace:
+#0 /var/www/fmc/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-26 10:38:23 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /fmc/teste
+Stack Trace:
+#0 /var/www/fmc/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-26 10:39:08 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /fmc/
+Stack Trace:
+#0 /var/www/fmc/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-26 14:34:18 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /fmc/
+Stack Trace:
+#0 /var/www/fmc/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-26 14:35:33 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-26 15:47:29 Error: [MissingHelperException] Helper class SearchHelper could not be found.
+Exception Attributes: array (
+  'class' => 'SearchHelper',
+  'plugin' => false,
+)
+Request URL: /sys/news
+Stack Trace:
+#0 /var/www/sys/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Search')
+#1 /var/www/sys/lib/Cake/View/View.php(820): HelperCollection->__isset('Search')
+#2 /var/www/sys/app/View/Elements/all_news.ctp(2): View->__get('Search')
+#3 /var/www/sys/lib/Cake/View/View.php(931): include('/var/www/sys/ap...')
+#4 /var/www/sys/lib/Cake/View/View.php(893): View->_evaluate('/var/www/sys/ap...', Array)
+#5 /var/www/sys/lib/Cake/View/View.php(1191): View->_render('/var/www/sys/ap...', Array)
+#6 /var/www/sys/lib/Cake/View/View.php(408): View->_renderElement('/var/www/sys/ap...', Array, Array)
+#7 /var/www/sys/app/View/News/index.ctp(11): View->element('all_news')
+#8 /var/www/sys/lib/Cake/View/View.php(931): include('/var/www/sys/ap...')
+#9 /var/www/sys/lib/Cake/View/View.php(893): View->_evaluate('/var/www/sys/ap...', Array)
+#10 /var/www/sys/lib/Cake/View/View.php(462): View->_render('/var/www/sys/ap...')
+#11 /var/www/sys/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#12 /var/www/sys/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#13 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#14 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2013-09-26 16:45:32 Error: Fatal Error (1): Call to a member function paginate() on a non-object in [/var/www/sys/app/Controller/NewsController.php, line 98]
+2013-09-26 16:45:32 Error: [FatalErrorException] Call to a member function paginate() on a non-object
+Request URL: /sys/news
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/sys/ap...', 98)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/sys/ap...', 98, Array)
+#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/sys/ap...', 98, Array)
+#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-26 16:46:03 Error: Fatal Error (1): Call to a member function paginate() on a non-object in [/var/www/sys/app/Controller/NewsController.php, line 96]
+2013-09-26 16:46:03 Error: [FatalErrorException] Call to a member function paginate() on a non-object
+Request URL: /sys/news
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/sys/ap...', 96)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/sys/ap...', 96, Array)
+#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/sys/ap...', 96, Array)
+#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-26 17:02:02 Error: [MissingControllerException] Controller class NewsController could not be found.
+Exception Attributes: array (
+  'class' => 'NewsController',
+  'plugin' => 'Usermgmt',
+)
+Request URL: /sys/usermgmt/News/indexSearch?term=dsa
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-26 17:05:31 Error: [MissingHelperException] Helper class SearchHelper could not be found.
+Exception Attributes: array (
+  'class' => 'SearchHelper',
+  'plugin' => false,
+)
+Request URL: /sys/news
+Stack Trace:
+#0 /var/www/sys/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Search')
+#1 /var/www/sys/lib/Cake/View/View.php(820): HelperCollection->__isset('Search')
+#2 /var/www/sys/app/View/Elements/all_news.ctp(2): View->__get('Search')
+#3 /var/www/sys/lib/Cake/View/View.php(931): include('/var/www/sys/ap...')
+#4 /var/www/sys/lib/Cake/View/View.php(893): View->_evaluate('/var/www/sys/ap...', Array)
+#5 /var/www/sys/lib/Cake/View/View.php(1191): View->_render('/var/www/sys/ap...', Array)
+#6 /var/www/sys/lib/Cake/View/View.php(408): View->_renderElement('/var/www/sys/ap...', Array, Array)
+#7 /var/www/sys/app/View/News/index.ctp(11): View->element('all_news')
+#8 /var/www/sys/lib/Cake/View/View.php(931): include('/var/www/sys/ap...')
+#9 /var/www/sys/lib/Cake/View/View.php(893): View->_evaluate('/var/www/sys/ap...', Array)
+#10 /var/www/sys/lib/Cake/View/View.php(462): View->_render('/var/www/sys/ap...')
+#11 /var/www/sys/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#12 /var/www/sys/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#13 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#14 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2013-09-26 17:05:43 Error: [MissingActionException] Action NewsController::addNews() could not be found.
+Exception Attributes: array (
+  'controller' => 'NewsController',
+  'action' => 'addNews',
+)
+Request URL: /sys/news/addNews
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-26 17:10:43 Error: [MissingControllerException] Controller class NewsController could not be found.
+Exception Attributes: array (
+  'class' => 'NewsController',
+  'plugin' => NULL,
+)
+Request URL: /sys/news/
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-26 17:12:15 Error: [MissingActionException] Action NewsController::addNews() could not be found.
+Exception Attributes: array (
+  'controller' => 'NewsController',
+  'action' => 'addNews',
+)
+Request URL: /sys/usermgmt/news/addNews
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-26 17:15:29 Error: [MissingActionException] Action NewsController::addNews() could not be found.
+Exception Attributes: array (
+  'controller' => 'NewsController',
+  'action' => 'addNews',
+)
+Request URL: /sys/usermgmt/news/addNews
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-26 17:15:39 Error: [MissingActionException] Action NewsController::addNews() could not be found.
+Exception Attributes: array (
+  'controller' => 'NewsController',
+  'action' => 'addNews',
+)
+Request URL: /sys/usermgmt/news/addNews
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-26 17:20:51 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /sys/js/tinymce/langs/pt.js
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-26 17:21:01 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /sys/js/tinymce/langs/pt-br.js
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-26 17:21:53 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /sys/js/tinymce/langs/pt-br.js
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-26 17:23:52 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /sys/js/tinymce/langs/pt_br.js
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-26 17:24:17 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /sys/js/tinymce/langs/pt_br.js
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-26 17:24:21 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /sys/js/tinymce/langs/pt_br.js
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-27 09:39:14 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ...INTO "public"."news" ("content", "image") VALUES ('', Array)
+                                                                      ^
+Request URL: /sys/usermgmt/news/add
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO "pu...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO "pu...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1761): DboSource->create(Object(News), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(140): Model->save(Array, false)
+#5 [internal function]: NewsController->add()
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-27 09:45:33 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=13802859321743
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-27 09:49:18 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=13802861577764
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-27 09:51:25 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=13802862849425
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-27 09:52:00 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ...INTO "public"."news" ("content", "image") VALUES ('', Array)
+                                                                      ^
+Request URL: /sys/usermgmt/news/add
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO "pu...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO "pu...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1761): DboSource->create(Object(News), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(140): Model->save(Array, false)
+#5 [internal function]: NewsController->add()
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-27 09:52:16 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=13802863358316
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-27 09:54:10 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ")"
+LINE 1: ...INTO "public"."news" ("content", "image") VALUES ('', Array)
+                                                                      ^
+Request URL: /sys/usermgmt/news/add
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO "pu...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO "pu...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1761): DboSource->create(Object(News), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(140): Model->save(Array, false)
+#5 [internal function]: NewsController->add()
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-27 09:54:29 Error: [PDOException] SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "tittle" violates not-null constraint
+Request URL: /sys/usermgmt/news/add
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO "pu...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO "pu...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1761): DboSource->create(Object(News), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(143): Model->save(Array, false)
+#5 [internal function]: NewsController->add()
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-27 09:55:19 Error: [PDOException] SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "tittle" violates not-null constraint
+Request URL: /sys/usermgmt/news/add
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO "pu...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO "pu...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1761): DboSource->create(Object(News), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(143): Model->save(Array, false)
+#5 [internal function]: NewsController->add()
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-27 10:17:59 Error: [MissingActionException] Action NewsController::deleteUser() could not be found.
+Exception Attributes: array (
+  'controller' => 'NewsController',
+  'action' => 'deleteUser',
+)
+Request URL: /sys/usermgmt/news/deleteUser/3
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-27 10:20:18 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=13802880175117
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-27 10:31:52 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=13802887110718
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-27 10:36:35 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-27 10:39:55 Error: [MissingActionException] Action NewsController::editUser() could not be found.
+Exception Attributes: array (
+  'controller' => 'NewsController',
+  'action' => 'editUser',
+)
+Request URL: /sys/usermgmt/News/editUser/8/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-27 11:36:38 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

@@ -39,19 +39,19 @@ class EmailConfig {
 
 	public $default = array(
 		'transport' => 'Mail',
-		'from' => 'you@localhost',
+		'from' => 'jefferson.rbr@gmail.com',
 		//'charset' => 'utf-8',
 		//'headerCharset' => 'utf-8',
 	);
-
+	
 	public $smtp = array(
 		'transport' => 'Smtp',
-		'from' => array('site@localhost' => 'My Site'),
-		'host' => 'localhost',
+		'from' => array('jefferson.bernardino@mgb.com.br' => 'Mgb'),
+		'host' => 'mail.mgfdsb.com.br',
 		'port' => 25,
 		'timeout' => 30,
-		'username' => 'user',
-		'password' => 'secret',
+		'username' => 'jefferson.bernardino@mgb.com.br',
+		'password' => 'jefber2003',
 		'client' => null,
 		'log' => false,
 		//'charset' => 'utf-8',

@@ -1,62 +1,72 @@
-<?php
-/**
- *
- * PHP 5
- *
- * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- *
- * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       app.View.Layouts
- * @since         CakePHP(tm) v 0.10.0.1076
- * @license       http://www.opensource.org/licenses/mit-license.php MIT License
- */
+ <!DOCTYPE html>
+	<html lang="pt-BR">
+	<head>
+		<?php echo $this->Html->charset(); ?>
+		<title>Sistema CMS - Mgb Mob</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script language="javascript">
+			var urlForJs="<?php echo SITE_URL ?>";
+		</script>
+		<?php
+			echo $this->Html->meta('icon');
+			/* Bootstrap CSS */
+			echo $this->Html->css('bootstrap.css?q='.QRDN);
+			echo $this->Html->css('bootstrap-responsive.css?q='.QRDN);
+			
+			/* Usermgmt Plugin CSS */
+			echo $this->Html->css('styles.css?q='.QRDN);
+			
+			/* Bootstrap Datepicker is taken from https://github.com/eternicode/bootstrap-datepicker */
+			echo $this->Html->css('/plugins/bootstrap-datepicker/css/datepicker.css?q='.QRDN);
+			
+			/* Chosen is taken from https://github.com/harvesthq/chosen/releases/tag/0.14.0 */
+			echo $this->Html->css('/plugins/chosen/chosen.css?q='.QRDN);
 
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
-?>
-<!DOCTYPE html>
-<html>
-<head>
-	<?php echo $this->Html->charset(); ?>
-	<title>
-		<?php echo $cakeDescription ?>:
-		<?php echo $title_for_layout; ?>
-	</title>
-	<?php
-		echo $this->Html->meta('icon');
+			/* Jquery latest version taken from http://jquery.com */
+			echo $this->Html->script('jquery-1.10.2.min.js');
+			
+			/* Bootstrap JS */
+			echo $this->Html->script('bootstrap.js?q='.QRDN);
 
-		echo $this->Html->css('cake.generic');
+			/* Bootstrap Datepicker is taken from https://github.com/eternicode/bootstrap-datepicker */
+			echo $this->Html->script('/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js?q='.QRDN);
+			
+			/* Bootstrap Typeahead is taken from https://github.com/biggora/bootstrap-ajax-typeahead */
+			echo $this->Html->script('/plugins/bootstrap-ajax-typeahead/js/bootstrap-typeahead.min.js?q='.QRDN);
+			
+			/* Chosen is taken from https://github.com/harvesthq/chosen/releases/tag/0.14.0 */
+			echo $this->Html->script('/plugins/chosen/chosen.jquery.min.js?q='.QRDN);
 
-		echo $this->fetch('meta');
-		echo $this->fetch('css');
-		echo $this->fetch('script');
-	?>
-</head>
-<body>
-	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
-		</div>
-		<div id="content">
+			/* Usermgmt Plugin JS */
+			echo $this->Html->script('/usermgmt/js/umscript.js?q='.QRDN);
+			echo $this->Html->script('/usermgmt/js/ajaxValidation.js?q='.QRDN);
 
-			<?php echo $this->Session->flash(); ?>
+			echo $this->Html->script('/usermgmt/js/chosen/chosen.ajaxaddition.jquery.js?q='.QRDN);
 
-			<?php echo $this->fetch('content'); ?>
+			echo $this->fetch('meta');
+			echo $this->fetch('css');
+			echo $this->fetch('script');
+		?>
+	</head>
+	<body>
+		<div class="container">
+			<div class="content">
+				<?php
+				if($this->UserAuth->isLogged()) {
+					echo $this->element('Usermgmt.dashboard');
+				} 
+				?>
+				<?php echo $this->element('Usermgmt.message'); ?>
+				<?php echo $this->element('Usermgmt.message_validation'); ?>
+				<?php echo $this->fetch('content'); ?>
+				<div style="clear:both"></div>
+			</div>
 		</div>
 		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false)
-				);
-			?>
+			<div class="container">
+				<p class="muted">Copyright &copy; <?php echo date('Y');?> Desenvolvido por <a href="http://mgbmob.com.br" target='_blank'>MgbMob</a>.</p>
+			</div>
 		</div>
-	</div>
-	<?php //echo $this->element('sql_dump'); ?>
-</body>
-</html>
+		<?php if(class_exists('JsHelper') && method_exists($this->Js, 'writeBuffer')) { echo $this->Js->writeBuffer(); } ?>
+	</body>
+	</html>

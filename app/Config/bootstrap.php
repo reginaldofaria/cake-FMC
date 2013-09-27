@@ -108,5 +108,10 @@ CakeLog::config('error', array(
 	'file' => 'error',
 ));
 
+// load	Usermgmt plugin	and apply plugin routes. Keep all the other plugins you	are using here
+CakePlugin::loadAll(array(
+    'Usermgmt' => array('routes' => true, 'bootstrap' => true),
+));
+	
 CakePlugin::load('DebugKit');
 
