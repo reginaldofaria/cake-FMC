@@ -1763,7 +1763,7 @@ class UsersController extends UserMgmtAppController {
 				}
 			}
 		}
-		$this->UserSetting->updateAll(array('UserSetting.value'=>'UserSetting.value + 1'), array('UserSetting.name'=>'QRDN'));
+		//$this->UserSetting->updateAll(array('UserSetting.value'=>'UserSetting.value + 1'), array('UserSetting.name'=>'QRDN'));
 		$this->Session->setFlash('Cache has been deleted successfully');
 		$this->redirect(array('action' => 'dashboard'));
 	}

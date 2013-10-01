@@ -17,6 +17,12 @@
 			</div>
 		</div>
 		<div class="um-form-row control-group">
+			<label class="control-label required"><?php echo __('Active');?></label>
+			<div class="controls">
+				<?php echo $this->Form->input('active', array('type'=>'checkbox', 'label'=>false, 'div'=>false)); ?>
+			</div>
+		</div>
+		<div class="um-form-row control-group">
 			<label class="control-label"><?php echo __('Image');?></label>
 			<div class="controls">
 				<?php echo $this->Form->input('News.image', array('label'=>false, 'div'=>false, 'type' => 'file')); ?>

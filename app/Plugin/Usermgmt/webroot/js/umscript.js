@@ -2,7 +2,7 @@ jQuery(document).ready(function($){
 	// Date picker
 	$(document).on("focus", ".datepicker", function() {
 		$(this).datepicker({
-			format: 'yyyy-mm-dd'
+			format: 'dd/mm/yyyy'
 		});
 	});
 	// adding title to links in table header

@@ -434,3 +434,1318 @@ Request URL: /sys/
 Stack Trace:
 #0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-09-27 11:45:16 Error: [MissingActionException] Action NewsController::addNews() could not be found.
+Exception Attributes: array (
+  'controller' => 'NewsController',
+  'action' => 'addNews',
+)
+Request URL: /sys/usermgmt/News/addNews
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-27 11:45:55 Error: [MissingActionException] Action NewsController::addNews() could not be found.
+Exception Attributes: array (
+  'controller' => 'NewsController',
+  'action' => 'addNews',
+)
+Request URL: /sys/usermgmt/News/addNews
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-27 13:47:53 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=13803004675471
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-27 13:48:25 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=13803005042752
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-27 13:51:38 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [/var/www/sys/app/Plugin/Usermgmt/View/News/edit.ctp, line 29]
+2013-09-27 13:51:38 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /sys/usermgmt/News/edit/10/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/sys/ap...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/sys/ap...', 29, Array)
+#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/sys/ap...', 29, Array)
+#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-27 13:51:48 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [/var/www/sys/app/Plugin/Usermgmt/View/News/edit.ctp, line 29]
+2013-09-27 13:51:48 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /sys/usermgmt/News/edit/10/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/sys/ap...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/sys/ap...', 29, Array)
+#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/sys/ap...', 29, Array)
+#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-27 13:55:54 Error: Fatal Error (4): syntax error, unexpected '[', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in [/var/www/sys/app/Plugin/Usermgmt/View/News/edit.ctp, line 29]
+2013-09-27 13:55:54 Error: [FatalErrorException] syntax error, unexpected '[', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+Request URL: /sys/usermgmt/News/edit/10/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/sys/ap...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/sys/ap...', 29, Array)
+#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/sys/ap...', 29, Array)
+#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-27 14:03:29 Error: [MissingActionException] Action NewsController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'NewsController',
+  'action' => 'edit',
+)
+Request URL: /sys/usermgmt/News/edit/10/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-27 15:07:02 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "WHERE"
+LINE 1: ..."content" = '<p>ffffffffff</p>', "image" = Array  WHERE "pub...
+                                                             ^
+Request URL: /sys/usermgmt/News/edit/10/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE "public"...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1839): DboSource->execute('UPDATE "public"...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1750): DboSource->update(Object(News), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(205): Model->save(Array, false)
+#5 [internal function]: NewsController->edit('10')
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-27 15:08:19 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=13803052991783
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-27 15:10:20 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "WHERE"
+LINE 1: ..."content" = '<p>ffffffffff</p>', "image" = Array  WHERE "pub...
+                                                             ^
+Request URL: /sys/usermgmt/News/edit/10/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE "public"...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1839): DboSource->execute('UPDATE "public"...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1750): DboSource->update(Object(News), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(205): Model->save(Array, false)
+#5 [internal function]: NewsController->edit('10')
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-27 15:13:46 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/sys/app/Plugin/Usermgmt/View/News/edit.ctp, line 40]
+2013-09-27 15:13:46 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /sys/usermgmt/News/edit/10/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/sys/ap...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/sys/ap...', 40, Array)
+#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/sys/ap...', 40, Array)
+#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-27 15:51:54 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php, line 232]
+2013-09-27 15:51:54 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /sys/usermgmt/News/makeActiveInactive/11
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/sys/ap...', 232)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/sys/ap...', 232, Array)
+#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/sys/ap...', 232, Array)
+#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-27 15:52:48 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php, line 232]
+2013-09-27 15:52:48 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /sys/usermgmt/News/makeActiveInactive/11
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/sys/ap...', 232)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/sys/ap...', 232, Array)
+#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/sys/ap...', 232, Array)
+#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-27 15:52:56 Error: [PDOException] SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "title" violates not-null constraint
+Request URL: /sys/usermgmt/News/makeActiveInactive/11
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO "pu...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO "pu...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1761): DboSource->create(Object(News), Array, Array)
+#4 /var/www/sys/lib/Cake/Model/Model.php(1603): Model->save(Array, Array)
+#5 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(236): Model->saveField('active', 0, false)
+#6 [internal function]: NewsController->makeActiveInactive('11')
+#7 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-09-27 15:53:56 Error: [PDOException] SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "title" violates not-null constraint
+Request URL: /sys/usermgmt/News/makeActiveInactive/11
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO "pu...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO "pu...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1761): DboSource->create(Object(News), Array, Array)
+#4 /var/www/sys/lib/Cake/Model/Model.php(1603): Model->save(Array, Array)
+#5 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(236): Model->saveField('active', 0, false)
+#6 [internal function]: NewsController->makeActiveInactive('11')
+#7 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-09-27 17:25:09 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=13803135062494
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-27 17:25:24 Error: [MissingActionException] Action NewsController::feed() could not be found.
+Exception Attributes: array (
+  'controller' => 'NewsController',
+  'action' => 'feed',
+)
+Request URL: /sys/usermgmt/News/feed
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-27 17:25:52 Error: [XmlException] Invalid input.
+Request URL: /sys/usermgmt/News/loadFeed
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Utility/Xml.php(100): Xml::fromArray(Array, Array)
+#1 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(102): Xml::build(Array)
+#2 [internal function]: NewsController->loadFeed()
+#3 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#4 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#6 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-09-27 17:27:23 Error: [XmlException] Invalid input.
+Request URL: /sys/usermgmt/News/loadFeed
+Stack Trace:
+#0 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(102): Xml::build(NULL)
+#1 [internal function]: NewsController->loadFeed()
+#2 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#3 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-09-27 17:28:01 Error: [XmlException] Invalid input.
+Request URL: /sys/usermgmt/News/loadFeed
+Stack Trace:
+#0 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(102): Xml::build(NULL)
+#1 [internal function]: NewsController->loadFeed()
+#2 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#3 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-09-27 17:30:22 Error: [XmlException] XML cannot be read.
+Request URL: /sys/usermgmt/News/loadFeed
+Stack Trace:
+#0 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(100): Xml::build('http://bakery.c...', Array)
+#1 [internal function]: NewsController->loadFeed()
+#2 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#3 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-09-27 17:30:24 Error: [XmlException] XML cannot be read.
+Request URL: /sys/usermgmt/News/loadFeed
+Stack Trace:
+#0 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(100): Xml::build('http://bakery.c...', Array)
+#1 [internal function]: NewsController->loadFeed()
+#2 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#3 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-09-27 17:30:39 Error: [XmlException] XML cannot be read.
+Request URL: /sys/usermgmt/News/loadFeed
+Stack Trace:
+#0 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(100): Xml::build('http://bakery.c...', Array)
+#1 [internal function]: NewsController->loadFeed()
+#2 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#3 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-09-27 17:31:33 Error: [XmlException] XML cannot be read.
+Request URL: /sys/usermgmt/News/loadFeed
+Stack Trace:
+#0 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(101): Xml::build('http://bakery.c...', Array)
+#1 [internal function]: NewsController->loadFeed()
+#2 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#3 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-09-27 17:34:00 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=13803140394021
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-27 17:35:05 Error: [XmlException] XML cannot be read.
+Request URL: /sys/usermgmt/News/loadFeed
+Stack Trace:
+#0 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(101): Xml::build('http://bakery.c...', Array)
+#1 [internal function]: NewsController->loadFeed()
+#2 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#3 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-09-27 17:36:01 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=13803140394021
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-27 17:37:07 Error: [MissingViewException] View file "/var/www/sys/app/Plugin/Usermgmt/View/News/load_feed.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/sys/app/Plugin/Usermgmt/View/News/load_feed.ctp',
+)
+Request URL: /sys/usermgmt/News/loadFeed
+Stack Trace:
+#0 /var/www/sys/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/sys/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/sys/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-27 17:39:51 Error: [MissingViewException] View file "/var/www/sys/app/Plugin/Usermgmt/View/News/load_feed.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/sys/app/Plugin/Usermgmt/View/News/load_feed.ctp',
+)
+Request URL: /sys/usermgmt/News/loadFeed
+Stack Trace:
+#0 /var/www/sys/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/sys/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/sys/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-27 17:40:05 Error: [MissingViewException] View file "/var/www/sys/app/Plugin/Usermgmt/View/News/load_feed.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/sys/app/Plugin/Usermgmt/View/News/load_feed.ctp',
+)
+Request URL: /sys/usermgmt/News/loadFeed
+Stack Trace:
+#0 /var/www/sys/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/sys/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/sys/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-27 17:40:48 Error: [MissingViewException] View file "/var/www/sys/app/Plugin/Usermgmt/View/News/load_feed.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/sys/app/Plugin/Usermgmt/View/News/load_feed.ctp',
+)
+Request URL: /sys/usermgmt/News/loadFeed
+Stack Trace:
+#0 /var/www/sys/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/sys/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/sys/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-27 17:40:50 Error: [MissingViewException] View file "/var/www/sys/app/Plugin/Usermgmt/View/News/load_feed.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/sys/app/Plugin/Usermgmt/View/News/load_feed.ctp',
+)
+Request URL: /sys/usermgmt/News/loadFeed
+Stack Trace:
+#0 /var/www/sys/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/sys/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/sys/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-27 17:40:57 Error: [MissingViewException] View file "/var/www/sys/app/Plugin/Usermgmt/View/News/load_feed.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/sys/app/Plugin/Usermgmt/View/News/load_feed.ctp',
+)
+Request URL: /sys/usermgmt/News/loadFeed
+Stack Trace:
+#0 /var/www/sys/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/sys/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/sys/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-27 17:47:37 Error: [InternalErrorException] Internal Server Error
+Request URL: /sys/usermgmt/News/loadFeed
+Stack Trace:
+#0 [internal function]: NewsController->loadFeed()
+#1 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#2 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-27 17:54:13 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=13803152527622
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-30 09:51:50 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-30 09:58:08 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=13805458874011
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-30 10:17:04 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=13805470240881
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-30 10:44:13 Error: Fatal Error (1): Call to undefined function set() in [/var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php, line 120]
+2013-09-30 10:44:13 Error: [FatalErrorException] Call to undefined function set()
+Request URL: /sys/usermgmt/News/loadFeed
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/sys/ap...', 120)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/sys/ap...', 120, Array)
+#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/sys/ap...', 120, Array)
+#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-30 10:44:19 Error: [PDOException] SQLSTATE[22001]: String data, right truncated: 7 ERROR:  value too long for type character varying(100)
+Request URL: /sys/usermgmt/News/loadFeed
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE "public"...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1839): DboSource->execute('UPDATE "public"...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1750): DboSource->update(Object(News), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(122): Model->save(Array, false)
+#5 [internal function]: NewsController->loadFeed()
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-30 11:09:54 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "WHERE"
+LINE 3: ...titular-no-fluminense </a></p>', "image" = Array  WHERE "pub...
+                                                             ^
+Request URL: /sys/usermgmt/News/edit/634/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE "public"...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1839): DboSource->execute('UPDATE "public"...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1750): DboSource->update(Object(News), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(240): Model->save(Array, false)
+#5 [internal function]: NewsController->edit('634')
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-30 11:11:15 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "WHERE"
+LINE 3: ...titular-no-fluminense </a></p>', "image" = Array  WHERE "pub...
+                                                             ^
+Request URL: /sys/usermgmt/News/edit/634/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE "public"...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1839): DboSource->execute('UPDATE "public"...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1750): DboSource->update(Object(News), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(240): Model->save(Array, false)
+#5 [internal function]: NewsController->edit('634')
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-30 11:19:23 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "WHERE"
+LINE 1: ...a-europa-20100924.html</a></p>', "image" = Array  WHERE "pub...
+                                                             ^
+Request URL: /sys/usermgmt/News/edit/707/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE "public"...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1839): DboSource->execute('UPDATE "public"...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1750): DboSource->update(Object(News), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(240): Model->save(Array, false)
+#5 [internal function]: NewsController->edit('707')
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-30 11:19:47 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "WHERE"
+LINE 1: ...a-europa-20100924.html</a></p>', "image" = Array  WHERE "pub...
+                                                             ^
+Request URL: /sys/usermgmt/News/edit/707/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE "public"...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1839): DboSource->execute('UPDATE "public"...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1750): DboSource->update(Object(News), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(240): Model->save(Array, false)
+#5 [internal function]: NewsController->edit('707')
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-30 11:20:00 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=13805507993772
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-30 11:20:44 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "WHERE"
+LINE 1: ...a-europa-20100924.html</a></p>', "image" = Array  WHERE "pub...
+                                                             ^
+Request URL: /sys/usermgmt/News/edit/707/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE "public"...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1839): DboSource->execute('UPDATE "public"...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1750): DboSource->update(Object(News), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(240): Model->save(Array, false)
+#5 [internal function]: NewsController->edit('707')
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-30 11:22:29 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "WHERE"
+LINE 1: ...a-europa-20100924.html</a></p>', "image" = Array  WHERE "pub...
+                                                             ^
+Request URL: /sys/usermgmt/News/edit/707/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE "public"...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1839): DboSource->execute('UPDATE "public"...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1750): DboSource->update(Object(News), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(240): Model->save(Array, false)
+#5 [internal function]: NewsController->edit('707')
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-30 11:24:48 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "WHERE"
+LINE 1: ...a-europa-20100924.html</a></p>', "image" = Array  WHERE "pub...
+                                                             ^
+Request URL: /sys/usermgmt/News/edit/707/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE "public"...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1839): DboSource->execute('UPDATE "public"...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1750): DboSource->update(Object(News), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(240): Model->save(Array, false)
+#5 [internal function]: NewsController->edit('707')
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-30 11:28:57 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "WHERE"
+LINE 1: ...E', "content" = '<p>fdsfsd</p>', "image" = Array  WHERE "pub...
+                                                             ^
+Request URL: /sys/usermgmt/News/edit/708/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE "public"...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1839): DboSource->execute('UPDATE "public"...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1750): DboSource->update(Object(News), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(240): Model->save(Array, false)
+#5 [internal function]: NewsController->edit('708')
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-30 11:32:28 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "WHERE"
+LINE 1: ...E', "content" = '<p>fdsfsd</p>', "image" = Array  WHERE "pub...
+                                                             ^
+Request URL: /sys/usermgmt/News/edit/708/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE "public"...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1839): DboSource->execute('UPDATE "public"...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1750): DboSource->update(Object(News), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(240): Model->save(Array, false)
+#5 [internal function]: NewsController->edit('708')
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-30 11:37:22 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "WHERE"
+LINE 1: ...E', "content" = '<p>fdsfsd</p>', "image" = Array  WHERE "pub...
+                                                             ^
+Request URL: /sys/usermgmt/News/edit/708/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE "public"...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1839): DboSource->execute('UPDATE "public"...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1750): DboSource->update(Object(News), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(240): Model->save(Array, false)
+#5 [internal function]: NewsController->edit('708')
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-30 11:38:09 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "WHERE"
+LINE 1: ...E', "content" = '<p>fdsfsd</p>', "image" = Array  WHERE "pub...
+                                                             ^
+Request URL: /sys/usermgmt/News/edit/708/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE "public"...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1839): DboSource->execute('UPDATE "public"...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1750): DboSource->update(Object(News), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(240): Model->save(Array, false)
+#5 [internal function]: NewsController->edit('708')
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-30 11:41:43 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "WHERE"
+LINE 1: ...E', "content" = '<p>fdsfsd</p>', "image" = Array  WHERE "pub...
+                                                             ^
+Request URL: /sys/usermgmt/News/edit/708/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE "public"...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1839): DboSource->execute('UPDATE "public"...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1750): DboSource->update(Object(News), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(240): Model->save(Array, false)
+#5 [internal function]: NewsController->edit('708')
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-30 11:42:54 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "WHERE"
+LINE 1: ...E', "content" = '<p>fdsfsd</p>', "image" = Array  WHERE "pub...
+                                                             ^
+Request URL: /sys/usermgmt/News/edit/708/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE "public"...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1839): DboSource->execute('UPDATE "public"...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1750): DboSource->update(Object(News), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(240): Model->save(Array, false)
+#5 [internal function]: NewsController->edit('708')
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-30 11:44:40 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "WHERE"
+LINE 1: ...E', "content" = '<p>fdsfsd</p>', "image" = Array  WHERE "pub...
+                                                             ^
+Request URL: /sys/usermgmt/News/edit/708/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE "public"...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1839): DboSource->execute('UPDATE "public"...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1750): DboSource->update(Object(News), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(241): Model->save(Array, false)
+#5 [internal function]: NewsController->edit('708')
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-30 11:47:30 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "WHERE"
+LINE 1: ...E', "content" = '<p>fdsfsd</p>', "image" = Array  WHERE "pub...
+                                                             ^
+Request URL: /sys/usermgmt/News/edit/708/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE "public"...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1839): DboSource->execute('UPDATE "public"...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1750): DboSource->update(Object(News), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(241): Model->save(Array, false)
+#5 [internal function]: NewsController->edit('708')
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-30 11:47:43 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "WHERE"
+LINE 1: ...E', "content" = '<p>fdsfsd</p>', "image" = Array  WHERE "pub...
+                                                             ^
+Request URL: /sys/usermgmt/News/edit/708/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE "public"...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1839): DboSource->execute('UPDATE "public"...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1750): DboSource->update(Object(News), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(241): Model->save(Array, false)
+#5 [internal function]: NewsController->edit('708')
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-30 11:49:39 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "WHERE"
+LINE 1: ...E', "content" = '<p>fdsfsd</p>', "image" = Array  WHERE "pub...
+                                                             ^
+Request URL: /sys/usermgmt/News/edit/708/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE "public"...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1839): DboSource->execute('UPDATE "public"...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1750): DboSource->update(Object(News), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(240): Model->save(Array, false)
+#5 [internal function]: NewsController->edit('708')
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-30 11:49:51 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "WHERE"
+LINE 1: ...E', "content" = '<p>fdsfsd</p>', "image" = Array  WHERE "pub...
+                                                             ^
+Request URL: /sys/usermgmt/News/edit/708/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE "public"...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1839): DboSource->execute('UPDATE "public"...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1750): DboSource->update(Object(News), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(241): Model->save(Array, false)
+#5 [internal function]: NewsController->edit('708')
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-30 11:56:04 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "WHERE"
+LINE 1: ...E', "content" = '<p>fdsfsd</p>', "image" = Array  WHERE "pub...
+                                                             ^
+Request URL: /sys/usermgmt/News/edit/708/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE "public"...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1839): DboSource->execute('UPDATE "public"...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1750): DboSource->update(Object(News), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/NewsController.php(240): Model->save(Array, false)
+#5 [internal function]: NewsController->edit('708')
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-30 14:26:16 Error: [MissingModelException] Products
+Request URL: /sys/usermgmt/Products
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Controller/Controller.php(1079): PaginatorComponent->paginate('Products', Array, Array)
+#1 /var/www/sys/app/Controller/AppController.php(46): Controller->paginate('Products', Array, Array)
+#2 /var/www/sys/app/Plugin/Usermgmt/Controller/ProductsController.php(71): AppController->paginate('Products')
+#3 [internal function]: ProductsController->index()
+#4 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#5 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-09-30 14:26:34 Error: [MissingModelException] Products
+Request URL: /sys/usermgmt/Products
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Controller/Controller.php(1079): PaginatorComponent->paginate('Products', Array, Array)
+#1 /var/www/sys/app/Controller/AppController.php(46): Controller->paginate('Products', Array, Array)
+#2 /var/www/sys/app/Plugin/Usermgmt/Controller/ProductsController.php(71): AppController->paginate('Products')
+#3 [internal function]: ProductsController->index()
+#4 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#5 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-09-30 14:27:03 Error: [MissingModelException] Products
+Request URL: /sys/usermgmt/Products
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Controller/Controller.php(1079): PaginatorComponent->paginate('Products', Array, Array)
+#1 /var/www/sys/app/Controller/AppController.php(46): Controller->paginate('Products', Array, Array)
+#2 /var/www/sys/app/Plugin/Usermgmt/Controller/ProductsController.php(71): AppController->paginate('Products')
+#3 [internal function]: ProductsController->index()
+#4 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#5 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-09-30 14:27:09 Error: [MissingModelException] Products
+Request URL: /sys/usermgmt/products
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Controller/Controller.php(1079): PaginatorComponent->paginate('Products', Array, Array)
+#1 /var/www/sys/app/Controller/AppController.php(46): Controller->paginate('Products', Array, Array)
+#2 /var/www/sys/app/Plugin/Usermgmt/Controller/ProductsController.php(71): AppController->paginate('Products')
+#3 [internal function]: ProductsController->index()
+#4 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#5 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-09-30 14:28:04 Error: [MissingModelException] Products
+Request URL: /sys/usermgmt/products
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Controller/Controller.php(1079): PaginatorComponent->paginate('Products', Array, Array)
+#1 /var/www/sys/app/Controller/AppController.php(46): Controller->paginate('Products', Array, Array)
+#2 /var/www/sys/app/Plugin/Usermgmt/Controller/ProductsController.php(71): AppController->paginate('Products')
+#3 [internal function]: ProductsController->index()
+#4 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#5 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-09-30 14:28:10 Error: [MissingModelException] Products
+Request URL: /sys/usermgmt/products
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Controller/Controller.php(1079): PaginatorComponent->paginate('Products', Array, Array)
+#1 /var/www/sys/app/Controller/AppController.php(46): Controller->paginate('Products', Array, Array)
+#2 /var/www/sys/app/Plugin/Usermgmt/Controller/ProductsController.php(71): AppController->paginate('Products')
+#3 [internal function]: ProductsController->index()
+#4 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#5 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-09-30 14:28:31 Error: [MissingModelException] Products
+Request URL: /sys/usermgmt/products
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Controller/Controller.php(1079): PaginatorComponent->paginate('Products', Array, Array)
+#1 /var/www/sys/app/Controller/AppController.php(46): Controller->paginate('Products', Array, Array)
+#2 /var/www/sys/app/Plugin/Usermgmt/Controller/ProductsController.php(71): AppController->paginate('Products')
+#3 [internal function]: ProductsController->index()
+#4 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#5 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-09-30 14:31:16 Error: Fatal Error (1): Call to a member function set() on a non-object in [/var/www/sys/app/Plugin/Usermgmt/Controller/ProductsController.php, line 86]
+2013-09-30 14:31:16 Error: [FatalErrorException] Call to a member function set() on a non-object
+Request URL: /sys/usermgmt/Products/add
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/sys/ap...', 86)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/sys/ap...', 86, Array)
+#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/sys/ap...', 86, Array)
+#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-30 14:31:31 Error: Fatal Error (1): Call to a member function set() on a non-object in [/var/www/sys/app/Plugin/Usermgmt/Controller/ProductsController.php, line 86]
+2013-09-30 14:31:31 Error: [FatalErrorException] Call to a member function set() on a non-object
+Request URL: /sys/usermgmt/Products/add
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/sys/ap...', 86)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/sys/ap...', 86, Array)
+#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/sys/ap...', 86, Array)
+#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-30 14:31:53 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "newsValidate"
+LINE 1: newsValidate
+        ^
+Request URL: /sys/usermgmt/Products/add
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('newsValidate', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('newsValidate', Array, Array)
+#3 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('newsValidate', Array, Array)
+#4 /var/www/sys/lib/Cake/Model/Model.php(799): DboSource->query('newsValidate', Array, Object(UserMgmtAppModel))
+#5 /var/www/sys/app/Plugin/Usermgmt/Controller/ProductsController.php(87): Model->__call('newsValidate', Array)
+#6 /var/www/sys/app/Plugin/Usermgmt/Controller/ProductsController.php(87): UserMgmtAppModel->newsValidate()
+#7 [internal function]: ProductsController->add()
+#8 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#9 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-09-30 14:33:35 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "newsValidate"
+LINE 1: newsValidate
+        ^
+Request URL: /sys/usermgmt/Products/add
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('newsValidate', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('newsValidate', Array, Array)
+#3 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('newsValidate', Array, Array)
+#4 /var/www/sys/lib/Cake/Model/Model.php(799): DboSource->query('newsValidate', Array, Object(Product))
+#5 /var/www/sys/app/Plugin/Usermgmt/Controller/ProductsController.php(87): Model->__call('newsValidate', Array)
+#6 /var/www/sys/app/Plugin/Usermgmt/Controller/ProductsController.php(87): Product->newsValidate()
+#7 [internal function]: ProductsController->add()
+#8 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#9 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-09-30 14:33:50 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=13805624266923
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-30 14:35:09 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "newsValidate"
+LINE 1: newsValidate
+        ^
+Request URL: /sys/usermgmt/Products/add
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('newsValidate', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('newsValidate', Array, Array)
+#3 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('newsValidate', Array, Array)
+#4 /var/www/sys/lib/Cake/Model/Model.php(799): DboSource->query('newsValidate', Array, Object(Product))
+#5 /var/www/sys/app/Plugin/Usermgmt/Controller/ProductsController.php(87): Model->__call('newsValidate', Array)
+#6 /var/www/sys/app/Plugin/Usermgmt/Controller/ProductsController.php(87): Product->newsValidate()
+#7 [internal function]: ProductsController->add()
+#8 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#9 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-09-30 14:39:26 Error: [PDOException] SQLSTATE[42703]: Undefined column: 7 ERROR:  column Product.Product does not exist
+LINE 1: SELECT DISTINCT("Product"."Product") FROM "public"."products...
+                        ^
+Request URL: /sys/usermgmt/autocomplete/fetch/Product/Product?term=gfrgd
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT DISTINCT...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT DISTINCT...', Array, Array)
+#3 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT DISTINCT...', false)
+#4 /var/www/sys/lib/Cake/Model/Model.php(2750): DboSource->read(Object(AppModel), Array)
+#5 /var/www/sys/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
+#6 /var/www/sys/app/Plugin/Usermgmt/Controller/AutocompleteController.php(64): Model->find('all', Array)
+#7 [internal function]: AutocompleteController->fetch('Product', 'Product')
+#8 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(AutocompleteController), Array)
+#9 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AutocompleteController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-09-30 14:46:27 Error: Fatal Error (1): Call to a member function set() on a non-object in [/var/www/sys/app/Plugin/Usermgmt/Controller/ProductsController.php, line 118]
+2013-09-30 14:46:27 Error: [FatalErrorException] Call to a member function set() on a non-object
+Request URL: /sys/usermgmt/Products/edit/4/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/sys/ap...', 118)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/sys/ap...', 118, Array)
+#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/sys/ap...', 118, Array)
+#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-30 14:47:42 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "newsValidate"
+LINE 1: newsValidate
+        ^
+Request URL: /sys/usermgmt/Products/edit/4/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('newsValidate', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('newsValidate', Array, Array)
+#3 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('newsValidate', Array, Array)
+#4 /var/www/sys/lib/Cake/Model/Model.php(799): DboSource->query('newsValidate', Array, Object(Product))
+#5 /var/www/sys/app/Plugin/Usermgmt/Controller/ProductsController.php(119): Model->__call('newsValidate', Array)
+#6 /var/www/sys/app/Plugin/Usermgmt/Controller/ProductsController.php(119): Product->newsValidate()
+#7 [internal function]: ProductsController->edit('4')
+#8 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#9 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-09-30 16:02:50 Error: Fatal Error (1): Call to a member function gameValidate() on a non-object in [/var/www/sys/app/Plugin/Usermgmt/Controller/GamesController.php, line 88]
+2013-09-30 16:02:50 Error: [FatalErrorException] Call to a member function gameValidate() on a non-object
+Request URL: /sys/usermgmt/Games/add
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/sys/ap...', 88)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/sys/ap...', 88, Array)
+#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/sys/ap...', 88, Array)
+#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-30 16:05:08 Error: [PDOException] SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "user_id" violates not-null constraint
+Request URL: /sys/usermgmt/Games/add
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO "pu...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO "pu...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1761): DboSource->create(Object(Game), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/GamesController.php(101): Model->save(Array, false)
+#5 [internal function]: GamesController->add()
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(GamesController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-30 16:25:34 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=13805691339131
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-30 16:39:09 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=13805699489632
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-30 16:56:36 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=13805709962203
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-30 17:21:58 Error: [PDOException] SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "user_id" violates not-null constraint
+Request URL: /sys/usermgmt/Games/add
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO "pu...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO "pu...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(1761): DboSource->create(Object(Game), Array, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/GamesController.php(107): Model->save(Array, false)
+#5 [internal function]: GamesController->add()
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(GamesController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-30 18:02:34 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=13805749542004
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-30 18:06:53 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/sys/app/Plugin/Usermgmt/View/Games/edit.ctp, line 35]
+2013-09-30 18:06:53 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /sys/usermgmt/Games/edit/3/page:1
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/sys/ap...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/sys/ap...', 35, Array)
+#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/sys/ap...', 35, Array)
+#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-01 10:15:43 Error: Fatal Error (1): Call to a member function getAllUsersWithUserIds() on a non-object in [/var/www/sys/app/Plugin/Usermgmt/Controller/SalesController.php, line 92]
+2013-10-01 10:15:43 Error: [FatalErrorException] Call to a member function getAllUsersWithUserIds() on a non-object
+Request URL: /sys/usermgmt/Sales/add
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/sys/ap...', 92)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/sys/ap...', 92, Array)
+#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/sys/ap...', 92, Array)
+#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-01 11:22:50 Error: Fatal Error (1): Call to a member function getUserNameById() on a non-object in [/var/www/sys/app/Plugin/Usermgmt/Controller/SalesController.php, line 77]
+2013-10-01 11:22:50 Error: [FatalErrorException] Call to a member function getUserNameById() on a non-object
+Request URL: /sys/usermgmt/Sales
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/sys/ap...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/sys/ap...', 77, Array)
+#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/sys/ap...', 77, Array)
+#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-01 11:23:07 Error: Fatal Error (1): Call to a member function getProductById() on a non-object in [/var/www/sys/app/Plugin/Usermgmt/Controller/SalesController.php, line 77]
+2013-10-01 11:23:07 Error: [FatalErrorException] Call to a member function getProductById() on a non-object
+Request URL: /sys/usermgmt/Sales
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/sys/ap...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/sys/ap...', 77, Array)
+#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/sys/ap...', 77, Array)
+#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-01 11:47:29 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-01 13:10:32 Error: [PDOException] SQLSTATE[42883]: Undefined function: 7 ERROR:  operator does not exist: character varying + integer
+LINE 1: ...DATE "public"."user_settings" SET "value" = value + 1  WHERE...
+                                                             ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+Request URL: /sys/usermgmt/Users/deleteCache
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE "public"...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1839): DboSource->execute('UPDATE "public"...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(2406): DboSource->update(Object(UserSetting), Array, NULL, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/UsersController.php(1766): Model->updateAll(Array, Array)
+#5 [internal function]: UsersController->deleteCache()
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-10-01 13:10:58 Error: [PDOException] SQLSTATE[42883]: Undefined function: 7 ERROR:  operator does not exist: character varying + integer
+LINE 1: ...DATE "public"."user_settings" SET "value" = value + 1  WHERE...
+                                                             ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+Request URL: /sys/usermgmt/Users/deleteCache
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE "public"...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1839): DboSource->execute('UPDATE "public"...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(2406): DboSource->update(Object(UserSetting), Array, NULL, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/UsersController.php(1766): Model->updateAll(Array, Array)
+#5 [internal function]: UsersController->deleteCache()
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-10-01 13:12:40 Error: [PDOException] SQLSTATE[42883]: Undefined function: 7 ERROR:  operator does not exist: character varying + integer
+LINE 1: ...DATE "public"."user_settings" SET "value" = value + 1  WHERE...
+                                                             ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+Request URL: /sys/usermgmt/Users/deleteCache
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('UPDATE "public"...', Array)
+#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1839): DboSource->execute('UPDATE "public"...')
+#3 /var/www/sys/lib/Cake/Model/Model.php(2406): DboSource->update(Object(UserSetting), Array, NULL, Array)
+#4 /var/www/sys/app/Plugin/Usermgmt/Controller/UsersController.php(1766): Model->updateAll(Array, Array)
+#5 [internal function]: UsersController->deleteCache()
+#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-10-01 13:22:28 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-01 13:23:50 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=13806446294085
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-01 13:24:10 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-01 13:24:22 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-01 13:24:44 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-01 13:25:06 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-01 13:26:20 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /sys/
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-01 13:26:41 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-01 13:27:28 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-01 13:27:30 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /sys/
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-01 13:27:54 Error: [MissingActionException] Action HomeController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'HomeController',
+  'action' => 'index',
+)
+Request URL: /sys/
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-10-01 13:29:07 Error: [MissingViewException] View file "/var/www/sys/app/View/Home/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/sys/app/View/Home/index.ctp',
+)
+Request URL: /sys/
+Stack Trace:
+#0 /var/www/sys/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/sys/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/sys/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-10-01 13:45:14 Error: [MissingViewException] View file "/var/www/sys/app/View/Frontend/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/sys/app/View/Frontend/index.ctp',
+)
+Request URL: /sys/
+Stack Trace:
+#0 /var/www/sys/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/sys/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/sys/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-10-01 13:45:21 Error: [MissingViewException] View file "/var/www/sys/app/View/Frontend/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/sys/app/View/Frontend/index.ctp',
+)
+Request URL: /sys/
+Stack Trace:
+#0 /var/www/sys/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/sys/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/sys/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-10-01 13:47:14 Error: [MissingControllerException] Controller class Admin]Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Admin]Controller',
+  'plugin' => NULL,
+)
+Request URL: /sys/admin]
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-01 13:48:33 Error: [MissingControllerException] Controller class ADMINController could not be found.
+Exception Attributes: array (
+  'class' => 'ADMINController',
+  'plugin' => NULL,
+)
+Request URL: /sys/ADMIN
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-01 13:48:39 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /sys/admin
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-01 13:57:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sys/css/frontend.css?q=1
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

@@ -34,7 +34,7 @@ THE PRODUCT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIE
 <?php   if ($this->UserAuth->isLogged()) {
 			echo __('Hello').' '.h($var['User']['first_name']).' '.h($var['User']['last_name']); ?>
 			<br/><br/>
-	<?php   $lastLoginTime = $this->UserAuth->getLastLoginTime();
+	<?php   $lastLoginTime = $this->UserAuth->getLastLoginTime('d/m/Y G:i');
 			if($lastLoginTime) {
 				echo __('Your last login time is ').$lastLoginTime;
 				echo "<br/><br/>";

@@ -26,7 +26,7 @@ THE PRODUCT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIE
 
 // Routes for standard actions
 App::uses('SlugRoute', 'Usermgmt.routes');
-Router::connect('/', array('controller' => 'home', 'action' => 'index'));
+Router::connect('/sys', array('plugin' => 'usermgmt', 'controller' => 'users', 'action' => 'login'));
 Router::connect('/:slug', array('plugin' => 'usermgmt', 'controller' => 'users', 'action' => 'viewProfile'), array('routeClass' => 'SlugRoute'));
 Router::connect('/login/*', array('plugin' => 'usermgmt', 'controller' => 'users', 'action' => 'login'));
 Router::connect('/logout', array('plugin' => 'usermgmt', 'controller' => 'users', 'action' => 'logout'));
@@ -71,5 +71,9 @@ Router::connect('/permissionGroupMatrix', array('plugin' => 'usermgmt', 'control
 Router::connect('/permissionSubGroupMatrix', array('plugin' => 'usermgmt', 'controller' => 'user_group_permissions', 'action' => 'permissionSubGroupMatrix'));
 Router::connect('/allEmailTemplates', array('plugin' => 'usermgmt', 'controller' => 'user_email_templates', 'action' => 'index'));
 Router::connect('/allEmailSignatures', array('plugin' => 'usermgmt', 'controller' => 'user_email_signatures', 'action' => 'index'));
-Router::connect('/news', array('plugin' => 'usermgmt', 'controller' => 'news', 'action' => 'index'));
+/******************FRONTEND*************/
+Router::connect('/', array('controller' => 'Frontend', 'action' => 'index'));
+
+
+
 

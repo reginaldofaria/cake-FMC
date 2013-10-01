@@ -813,18 +813,16 @@ class User extends UserMgmtAppModel {
 	 * @param array $userIds user ids
 	 * @return boolean
 	 */
-	function getAllUsersWithUserIds($userIds=null) {
+	function getAllUsersWithUserIds($userIds=null, $cond=null) {
 		$users=array();
-		$cond = array();
+		//$cond = array();
 		$cond['User.active']= 1;
 		if ($userIds) {
 			$cond['User.id']=$userIds;
 		}
-		if($userIds) {
-			$res = $this->find('all', array('conditions'=>$cond, 'fields'=>array('User.id', 'User.email', 'User.first_name', 'User.last_name')));
-			foreach($res as $row) {
-				$users[$row['User']['id']]=$row['User']['first_name'].' '.$row['User']['last_name'].' ('.$row['User']['email'].')';
-			}
+		$res = $this->find('all', array('conditions'=>$cond, 'fields'=>array('User.id', 'User.email', 'User.first_name', 'User.last_name')));
+		foreach($res as $row) {
+			$users[$row['User']['id']]=$row['User']['first_name'].' '.$row['User']['last_name'].' ('.$row['User']['email'].')';
 		}
 		return $users;
 	}
