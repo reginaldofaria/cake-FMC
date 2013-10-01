@@ -73,7 +73,11 @@ Router::connect('/allEmailTemplates', array('plugin' => 'usermgmt', 'controller'
 Router::connect('/allEmailSignatures', array('plugin' => 'usermgmt', 'controller' => 'user_email_signatures', 'action' => 'index'));
 /******************FRONTEND*************/
 Router::connect('/', array('controller' => 'Frontend', 'action' => 'index'));
-
+Router::connect('/participe', array('controller' => 'Frontend', 'action' => 'participe'));
+Router::connect('/ranking', array('controller' => 'Frontend', 'action' => 'ranking'));
+Router::connect('/regulamento', array('controller' => 'Frontend', 'action' => 'regulamento'));
+Router::connect('/campeao', array('controller' => 'Frontend', 'action' => 'campeao'));
+Router::connect('/login', array('controller' => 'Frontend', 'action' => 'login'));
 
 
 

@@ -64,7 +64,7 @@ class DATABASE_CONFIG {
 	public $default = array(
 		'datasource' => 'Database/Postgres',
 		'persistent' => false,
-		'host' => 'localhost',
+		'host' => '192.168.1.109',
 		'login' => 'postgres',
 		'password' => 'jrbjrb',
 		'database' => 'fmc',

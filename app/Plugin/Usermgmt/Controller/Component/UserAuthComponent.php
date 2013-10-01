@@ -73,16 +73,21 @@ class UserAuthComponent extends Component {
 		$requested= (isset($c->params['requested']) && $c->params['requested']==1) ? true : false;
 		//white list
 		$permissionFree=array('Users/login',
-							  'Users/logout',
-							  'Users/register',
-							  'Users/userVerification', 
-							  'Users/forgotPassword', 
-							  'Users/activatePassword',
-							  'pages/display',
-							  'Users/accessDenied',
-							  'Users/emailVerification',
-							  'Users/ajaxLoginRedirect',
-							  'Frontend/index');
+							'Users/logout',
+							'Users/register',
+							'Users/userVerification', 
+							'Users/forgotPassword', 
+							'Users/activatePassword',
+							'pages/display',
+							'Users/accessDenied',
+							'Users/emailVerification',
+							'Users/ajaxLoginRedirect',
+							'Frontend/index',
+							'Frontend/participe',
+							'Frontend/ranking',
+							'Frontend/regulamento',
+							'Frontend/campeao',
+							'Frontend/login');
 		$allControllers=$this->ControllerList->getControllerWithMethods();
 		$errorPage=false;
 		if (!in_array($actionUrl, $allControllers)) {

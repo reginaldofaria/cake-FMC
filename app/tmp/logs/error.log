@@ -1749,3 +1749,97 @@ Request URL: /sys/css/frontend.css?q=1
 Stack Trace:
 #0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-10-01 14:33:55 Error: [MissingViewException] View file "/var/www/sys/app/View/Frontend/ranking.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/sys/app/View/Frontend/ranking.ctp',
+)
+Request URL: /sys/ranking
+Stack Trace:
+#0 /var/www/sys/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/sys/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/sys/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-10-01 14:37:31 Error: [MissingViewException] View file "/var/www/sys/app/View/Frontend/regulamento.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/sys/app/View/Frontend/regulamento.ctp',
+)
+Request URL: /sys/regulamento
+Stack Trace:
+#0 /var/www/sys/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/sys/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/sys/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-10-01 14:41:21 Error: [MissingActionException] Action FrontendController::participe() could not be found.
+Exception Attributes: array (
+  'controller' => 'FrontendController',
+  'action' => 'participe',
+)
+Request URL: /sys/participe
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-10-01 15:11:44 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /sys/users/login
+Stack Trace:
+#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-01 15:13:05 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/sys/app/View/Frontend/index.ctp, line 5]
+2013-10-01 15:13:05 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /sys/
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/sys/ap...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/sys/ap...', 5, Array)
+#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/sys/ap...', 5, Array)
+#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-01 16:15:57 Error: Fatal Error (4): syntax error, unexpected '<' in [/var/www/sys/app/View/Elements/menu_sup.ctp, line 5]
+2013-10-01 16:15:57 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /sys/
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/sys/ap...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/sys/ap...', 5, Array)
+#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/sys/ap...', 5, Array)
+#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-01 16:16:46 Error: Fatal Error (4): syntax error, unexpected '!', expecting variable (T_VARIABLE) or '$' in [/var/www/sys/app/View/Elements/menu_sup.ctp, line 2]
+2013-10-01 16:16:46 Error: [FatalErrorException] syntax error, unexpected '!', expecting variable (T_VARIABLE) or '$'
+Request URL: /sys/
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/sys/ap...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/sys/ap...', 2, Array)
+#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/sys/ap...', 2, Array)
+#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-01 16:17:56 Error: Fatal Error (4): syntax error, unexpected end of file in [/var/www/sys/app/View/Elements/menu_sup.ctp, line 21]
+2013-10-01 16:17:56 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /sys/
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/sys/ap...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/sys/ap...', 21, Array)
+#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/sys/ap...', 21, Array)
+#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-01 16:18:17 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [/var/www/sys/app/View/Elements/menu_sup.ctp, line 6]
+2013-10-01 16:18:17 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /sys/
+Stack Trace:
+#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/sys/ap...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/sys/ap...', 6, Array)
+#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/sys/ap...', 6, Array)
+#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

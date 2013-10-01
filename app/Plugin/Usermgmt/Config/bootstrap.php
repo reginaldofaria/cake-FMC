@@ -72,6 +72,12 @@ function UsermgmtInIt(&$controller) {
 	if(!defined("LOGIN_REDIRECT_URL")) {
 		define("LOGIN_REDIRECT_URL", ((isset($allSettings['loginRedirectUrl'])) ? $allSettings['loginRedirectUrl']['value'] : '/login'));
 	}
+	if(!defined("LOGIN_FRONTEND_REDIRECT_URL")) {
+		define("LOGIN_FRONTEND_REDIRECT_URL", ((isset($allSettings['loginFrontendRedirectUrl'])) ? $allSettings['loginFrontendRedirectUrl']['value'] : '/'));
+	}
+	if(!defined("LOGOUT_FRONTEND_REDIRECT_URL")) {
+		define("LOGOUT_FRONTEND_REDIRECT_URL", ((isset($allSettings['logoutFrontendRedirectUrl'])) ? $allSettings['logoutFrontendRedirectUrl']['value'] : '/'));
+	}
 	if(!defined("LOGOUT_REDIRECT_URL")) {
 		define("LOGOUT_REDIRECT_URL", ((isset($allSettings['logoutRedirectUrl'])) ? $allSettings['logoutRedirectUrl']['value'] : '/login'));
 	}
