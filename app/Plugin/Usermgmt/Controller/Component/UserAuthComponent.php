@@ -87,7 +87,9 @@ class UserAuthComponent extends Component {
 							'Frontend/ranking',
 							'Frontend/regulamento',
 							'Frontend/campeao',
-							'Frontend/login');
+							'Frontend/login',
+							'Frontend/logout',
+							'Frontend/noticias');
 		$allControllers=$this->ControllerList->getControllerWithMethods();
 		$errorPage=false;
 		if (!in_array($actionUrl, $allControllers)) {

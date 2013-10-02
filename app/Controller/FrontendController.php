@@ -3,14 +3,15 @@ class FrontendController extends AppController {
 	
 	public $layout = 'frontend';
 	public $uses = array('Usermgmt.News', 
-						'Usermgmt.User',
+						 'Usermgmt.User',
 						 'Usermgmt.UserGroup',
 						 'Usermgmt.UserSetting',
 						 'Usermgmt.TmpEmail',
 						 'Usermgmt.UserDetail',
 						 'Usermgmt.UserActivity',
 						 'Usermgmt.LoginToken',
-						 'Usermgmt.UserGroupPermission');
+						 'Usermgmt.UserGroupPermission',
+						 'Usermgmt.Resale');
 	public $components = array('RequestHandler', 'Usermgmt.UserConnect', 'Cookie', 'Usermgmt.ControllerList');
 	public $helpers = array('Js');
 	public $paginate = array('limit' => 25);
@@ -31,8 +32,9 @@ class FrontendController extends AppController {
 	}
 	
 	function index() {
-		 $news = $this->News->find('all');
-		 $this->set('news', $news);
+		$this->paginate = array('limit' => 4, 'order'=>'News.date_add desc', 'conditions' => array('News.active' => true));
+		$news = $this->paginate('News');
+		$this->set('news', $news);
 	}
 	
 	function regulamento() {
@@ -48,10 +50,96 @@ class FrontendController extends AppController {
 	}
 	
 	function participe() {
+		if ($this->request->isPost()) {
+			$this->User->set($this->request->data);
+			$this->UserDetail->set($this->request->data);
+			$this->Resale->set($this->request->data);
+			$this->request->data['User']['username'] = $this->request->data['User']['email'];
+			$this->request->data['User']['user_group_id'] = DEFAULT_GROUP_ID;
+			$UserRegisterValidate = $this->User->ParticipeValidate();
+			//$userPhotoValidate = $this->UserDetail->ParticipePhotoValidate();
+			$codigoRevendaValidate = $this->Resale->codigoValidate();
+			if($this->RequestHandler->isAjax()) {
+				$this->layout = 'ajax';
+				$this->autoRender = false;
+				if ($UserRegisterValidate && $codigoRevendaValidate) {
+					$response = array('error' => 0, 'message' => 'success');
+					return json_encode($response);
+				} else {
+					$response = array('error' => 1,'message' => 'failure');
+					$response['data']['User']   = $this->User->validationErrors;
+					$response['data']['Resale']   = $this->Resale->validationErrors;
+					return json_encode($response);
+				}
+				//VALIDANDO EXTENSÃO DA FOTO
+				/*if ($userPhotoValidate) {
+					$response = array('error' => 0, 'message' => 'success');
+					//return json_encode($response);
+				} else {
+					$response = array('error' => 1,'message' => 'failure');
+					$response['data']['User']   = $this->UserDetail->validationErrors;
+					//return json_encode($response);
+				}*/
+				//VALIDANDO CÓDIGO DA REVENDA
+			} else {
+				if ($UserRegisterValidate && $codigoRevendaValidate) {
+					if(is_uploaded_file($this->request->data['UserDetail']['photo']['tmp_name']) && !empty($this->request->data['UserDetail']['photo']['tmp_name'])){
+						$path_info = pathinfo($this->request->data['UserDetail']['photo']['name']);
+						chmod ($this->request->data['UserDetail']['photo']['tmp_name'], 0644);
+						$photo=time().mt_rand().".".$path_info['extension'];
+						$fullpath= WWW_ROOT."img".DS.IMG_DIR;
+						if(!is_dir($fullpath)) {
+							mkdir($fullpath, 0777, true);
+						}
+						move_uploaded_file($this->request->data['UserDetail']['photo']['tmp_name'],$fullpath.DS.$photo);
+						$this->request->data['UserDetail']['photo']=$photo;
+						if(!empty($user['UserDetail']['photo']) && file_exists($fullpath.DS.$user['UserDetail']['photo'])) {
+							unlink($fullpath.DS.$user['UserDetail']['photo']);
+						}
+					}
+					else {
+						$this->request->data['UserDetail']['photo'] = '';
+					}
+					$this->request->data['User']['email_verified']=1;
+					$this->request->data['User']['active']=1;
+					if(isset($_SERVER['REMOTE_ADDR'])) {
+						$this->request->data['User']['ip_address']=$_SERVER['REMOTE_ADDR'];
+					}
+					$salt = $this->UserAuth->makeSalt();
+					$this->request->data['User']['salt']=$salt;
+					$this->request->data['User']['password'] = $this->UserAuth->makePassword($this->request->data['User']['password'], $salt);
+					$this->User->save($this->request->data,false);
+					$userId=$this->User->getLastInsertID();
+					$this->request->data['UserDetail']['user_id']=$userId;
+					$this->UserDetail->save($this->request->data,false);
+					$this->User->contain('UserDetail');
+					$user = $this->User->getUserById($userId);
+					/*if (SEND_REGISTRATION_MAIL && !EMAIL_VERIFICATION) {
+						$this->User->sendRegistrationMail($user);
+					}*/
+					$this->UserAuth->login($user);
+					$this->Session->setFlash(__('registrado'));
+					$this->redirect(array('action' => 'index'));
+				
+				}
+			}
+		} else {
+			$this->set('resales', $this->Resale->getAllResales());
+		}	
+	}
+	
+	function noticias($id=null) {
+		if (!empty($id)) {
+			$set_news = $this->News->findById($id);
+		}
+		else {
+			$set_news = $this->News->find('first', array('conditions' => array('News.active' => true), 'orderby' => 'News.date_add asc'));
+		}
+		$this->set(compact('set_news', $set_news));
 			
 	}
 	
-public function login($connect=null) {
+	public function login($connect=null) {
 		$userId = $this->UserAuth->getUserId();
 		if ($userId) {
 			if($connect) {
@@ -63,7 +151,6 @@ public function login($connect=null) {
 	
 		if ($this->request->isPost()) {
 			$errorMsg="";
-			$loginValid=false;
 			$this->User->set($this->request->data);
 			$UserLoginValidate = $this->User->LoginValidate();
 			if($UserLoginValidate) {
@@ -89,7 +176,7 @@ public function login($connect=null) {
 			if($this->RequestHandler->isAjax()) {
 				$this->layout = 'ajax';
 				$this->autoRender = false;
-				if ($UserLoginValidate && $loginValid) {
+				if ($UserLoginValidate) {
 					$response = array('error' => 0, 'message' => 'success');
 					return json_encode($response);
 				} else {
@@ -107,7 +194,7 @@ public function login($connect=null) {
 					return json_encode($response);
 				}
 			} else {
-				if ($UserLoginValidate && $loginValid) {
+				if ($UserLoginValidate) {
 					$this->UserAuth->login($user);
 					$remember = (!empty($this->request->data['User']['remember']));
 					if ($remember) {
@@ -125,5 +212,13 @@ public function login($connect=null) {
 				}
 			}
 		}		
+	}
+	
+	public function logout($msg=true) {
+		$this->UserAuth->logout();
+		if($msg) {
+			$this->Session->setFlash(__('You are successfully signed out'));
+		}
+		$this->redirect(LOGOUT_FRONTEND_REDIRECT_URL);
 	}
 }

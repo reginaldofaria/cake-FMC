@@ -4,7 +4,7 @@ if(!$this->UserAuth->isLogged()) {
 }
 else {
 	echo "Ola " . $var['User']['first_name'];
-	echo $this->Html->link(__('Logout'), array('controller'=>'Frontend', 'action'=>'logout'))
+	echo $this->Html->link(__('Logout'), array('controller'=>'frontend', 'action'=>'logout'));
 }
 $contName = Inflector::camelize($this->params['controller']);
 $actName = $this->params['action'];

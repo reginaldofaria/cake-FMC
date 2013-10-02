@@ -1358,8 +1358,7 @@ class UsersController extends UserMgmtAppController {
 				} else {
 					if ($UserRegisterValidate && $UserDetailRegisterValidate) {
 						$user = $this->User->getUserById($userId);
-						if(is_uploaded_file($this->request->data['UserDetail']['photo']['tmp_name']) && !empty($this->request->data['UserDetail']['photo']['tmp_name']))
-						{
+						if(is_uploaded_file($this->request->data['UserDetail']['photo']['tmp_name']) && !empty($this->request->data['UserDetail']['photo']['tmp_name'])){
 							$path_info = pathinfo($this->request->data['UserDetail']['photo']['name']);
 							chmod ($this->request->data['UserDetail']['photo']['tmp_name'], 0644);
 							$photo=time().mt_rand().".".$path_info['extension'];

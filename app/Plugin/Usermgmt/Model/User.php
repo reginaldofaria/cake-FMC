@@ -36,7 +36,7 @@ class User extends UserMgmtAppModel {
 	 *
 	 * @var array
 	 */
-	var $hasOne = array('Usermgmt.UserDetail');
+	var $hasOne = array('Usermgmt.UserDetail', 'Usermgmt.Resale');
 	/**
 	 * model validation array
 	 *
@@ -88,110 +88,200 @@ class User extends UserMgmtAppModel {
 	 */
 	function RegisterValidate() {
 		$validate1 = array(
-				'user_group_id' => array(
+			'user_group_id' => array(
+				'rule' => array('multiple', array('min' => 1)),
+				'message'=> __('Please select group')),
+			'username'=> array(
+				'mustNotEmpty'=>array(
+					'rule' => 'notEmpty',
+					'message'=> __('Please enter username'),
+					'last'=>true),
+				'mustAlphaNumeric'=>array(
+					'rule' => 'alphaNumericDashUnderscore',
+					'message'=> __('Username must be alphaNumeric'),
+					'on' => 'create',
+					'last'=>true),
+				'mustAlpha'=>array(
+					'rule' => 'alpha',
+					'message'=> __('Username must contain any letter'),
+					'last'=>true),
+				'mustUnique'=>array(
+					'rule' =>'isUnique',
+					'message' =>__('This username already taken'),
+					'last'=>true),
+				'mustNotBanned'=>array(
+					'rule' =>'isBanned',
+					'message' =>'',
+					'last'=>true),
+				'mustBeLonger'=>array(
+					'rule' => array('minLength', 4),
+					'message'=> __('Username must be greater than 3 characters'),
+					'last'=>true),
+				),
+			'first_name'=> array(
+				'mustNotEmpty'=>array(
+					'rule' => 'notEmpty',
+					'message'=> __('Please enter first name'),
+					'last'=>true),
+				'mustAlphaNumeric'=>array(
+					'rule' => 'alphaNumericDashUnderscoreSpace',
+					'message'=> __('Please enter valid first name'),
+					'last'=>true),
+				'mustAlpha'=>array(
+					'rule' => 'alpha',
+					'message'=> __('Please enter valid first name'),
+					'last'=>true),
+				),
+			'last_name'=> array(
+				'mustNotEmpty'=>array(
+					'rule' => 'notEmpty',
+					'message'=> __('Please enter last name'),
+					'last'=>true),
+				'mustAlphaNumeric'=>array(
+					'rule' => 'alphaNumericDashUnderscoreSpace',
+					'message'=> __('Please enter valid last name'),
+					'last'=>true),
+				'mustAlpha'=>array(
+					'rule' => 'alpha',
+					'message'=> __('Please enter valid last name'),
+					'last'=>true),
+				),
+			'email'=> array(
+				'mustNotEmpty'=>array(
+					'rule' => 'notEmpty',
+					'message'=> __('Please enter email'),
+					'last'=>true),
+				'mustBeEmail'=> array(
+					'rule' => array('email'),
+					'message' => __('Please enter valid email'),
+					'last'=>true),
+				'mustUnique'=>array(
+					'rule' =>'isUnique',
+					/* Please note if you want to change this message then also change this in change_password.ctp */
+					'message' =>__('This email is already registered')
+					)
+				),
+			'oldpassword'=>array(
+				'mustNotEmpty'=>array(
+					'rule' => 'notEmpty',
+					'message'=> __('Please enter old password'),
+					'last'=>true),
+				'mustMatch'=>array(
+					'rule' => array('verifyOldPass'),
+					'message' => __('Please enter correct old password')),
+				),
+			'password'=>array(
+				'mustNotEmpty'=>array(
+					'rule' => 'notEmpty',
+					'message'=> __('Please enter password'),
+					'on' => 'create',
+					'last'=>true),
+				'mustBeLonger'=>array(
+					'rule' => array('minLength', 6),
+					'message'=> __('Password must be greater than 5 characters'),
+					'on' => 'create',
+					'last'=>true),
+				'mustMatch'=>array(
+					'rule' => array('verifies'),
+					'message' => __('Both passwords must match')),
+				),
+			'captcha'=>array(
+				'mustMatch'=>array(
+					'rule' => array('recaptchaValidate'),
+					'message' => ''),
+				)
+		);
+		$this->validate=$validate1;
+		return $this->validates();
+	}
+	
+	
+	
+	
+	
+	function ParticipeValidate() {
+		$validate2 = array(
+			'user_group_id' => array(
 					'rule' => array('multiple', array('min' => 1)),
 					'message'=> __('Please select group')),
-				'username'=> array(
-					'mustNotEmpty'=>array(
+			'username'=> array(
+				'mustNotEmpty'=>array(
 						'rule' => 'notEmpty',
 						'message'=> __('Please enter username'),
 						'last'=>true),
-					'mustAlphaNumeric'=>array(
+				'mustAlphaNumeric'=>array(
 						'rule' => 'alphaNumericDashUnderscore',
 						'message'=> __('Username must be alphaNumeric'),
 						'on' => 'create',
 						'last'=>true),
-					'mustAlpha'=>array(
+				'mustAlpha'=>array(
 						'rule' => 'alpha',
 						'message'=> __('Username must contain any letter'),
 						'last'=>true),
-					'mustUnique'=>array(
+				'mustUnique'=>array(
 						'rule' =>'isUnique',
 						'message' =>__('This username already taken'),
 						'last'=>true),
-					'mustNotBanned'=>array(
+				'mustNotBanned'=>array(
 						'rule' =>'isBanned',
 						'message' =>'',
 						'last'=>true),
-					'mustBeLonger'=>array(
+				'mustBeLonger'=>array(
 						'rule' => array('minLength', 4),
 						'message'=> __('Username must be greater than 3 characters'),
 						'last'=>true),
-					),
-				'first_name'=> array(
-					'mustNotEmpty'=>array(
+			),
+			'first_name'=> array(
+				'mustNotEmpty'=>array(
 						'rule' => 'notEmpty',
-						'message'=> __('Please enter first name'),
+						'message'=> __('Por favor digite seu nome'),
 						'last'=>true),
-					'mustAlphaNumeric'=>array(
+				'mustAlphaNumeric'=>array(
 						'rule' => 'alphaNumericDashUnderscoreSpace',
-						'message'=> __('Please enter valid first name'),
+						'message'=> __('Por favor digite um nome válido'),
 						'last'=>true),
-					'mustAlpha'=>array(
+				'mustAlpha'=>array(
 						'rule' => 'alpha',
-						'message'=> __('Please enter valid first name'),
+						'message'=> __('Por favor digite um nome válido'),
 						'last'=>true),
-					),
-				'last_name'=> array(
-					'mustNotEmpty'=>array(
+			),
+			'email'=> array(
+				'mustNotEmpty'=>array(
 						'rule' => 'notEmpty',
-						'message'=> __('Please enter last name'),
+						'message'=> __('Por favor digite um email'),
 						'last'=>true),
-					'mustAlphaNumeric'=>array(
-						'rule' => 'alphaNumericDashUnderscoreSpace',
-						'message'=> __('Please enter valid last name'),
-						'last'=>true),
-					'mustAlpha'=>array(
-						'rule' => 'alpha',
-						'message'=> __('Please enter valid last name'),
-						'last'=>true),
-					),
-				'email'=> array(
-					'mustNotEmpty'=>array(
-						'rule' => 'notEmpty',
-						'message'=> __('Please enter email'),
-						'last'=>true),
-					'mustBeEmail'=> array(
+				'mustBeEmail'=> array(
 						'rule' => array('email'),
-						'message' => __('Please enter valid email'),
+						'message' => __('Por favor digite um email válido'),
 						'last'=>true),
-					'mustUnique'=>array(
+				'mustUnique'=>array(
 						'rule' =>'isUnique',
 						/* Please note if you want to change this message then also change this in change_password.ctp */
-						'message' =>__('This email is already registered')
-						)
-					),
-				'oldpassword'=>array(
-					'mustNotEmpty'=>array(
+						'message' =>__('Este email já está cadastrado.')
+				)
+			),
+			'password'=>array(
+				'mustNotEmpty'=>array(
 						'rule' => 'notEmpty',
-						'message'=> __('Please enter old password'),
-						'last'=>true),
-					'mustMatch'=>array(
-						'rule' => array('verifyOldPass'),
-						'message' => __('Please enter correct old password')),
-					),
-				'password'=>array(
-					'mustNotEmpty'=>array(
-						'rule' => 'notEmpty',
-						'message'=> __('Please enter password'),
+						'message'=> __('Por favor digite uma senha'),
 						'on' => 'create',
 						'last'=>true),
-					'mustBeLonger'=>array(
+				'mustBeLonger'=>array(
 						'rule' => array('minLength', 6),
-						'message'=> __('Password must be greater than 5 characters'),
+						'message'=> __('Senha deve conter no mínimo 6 caracteres'),
 						'on' => 'create',
 						'last'=>true),
-					'mustMatch'=>array(
+				'mustMatch'=>array(
 						'rule' => array('verifies'),
-						'message' => __('Both passwords must match')),
-					),
-				'captcha'=>array(
-					'mustMatch'=>array(
-						'rule' => array('recaptchaValidate'),
-						'message' => ''),
-					)
-			);
-		$this->validate=$validate1;
+						'message' => __('Senhas não são iguais')),
+			),
+			'resale_id'=>array(
+				'mustNotEmpty'=>array(
+					'rule' => 'notEmpty',
+					'message' => 'Por favor escolha a revenda'),
+			)
+		);
+		$this->validate=$validate2;
 		return $this->validates();
 	}
 	/**
