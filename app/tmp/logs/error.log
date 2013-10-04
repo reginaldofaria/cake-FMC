@@ -1843,782 +1843,793 @@ Stack Trace:
 #3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
-2013-10-02 11:37:37 Error: Fatal Error (4): syntax error, unexpected '}', expecting ',' or ';' in [/var/www/sys/app/View/Elements/menu_sup.ctp, line 8]
-2013-10-02 11:37:37 Error: [FatalErrorException] syntax error, unexpected '}', expecting ',' or ';'
-Request URL: /sys/participe
+2013-10-02 09:47:22 Error: Fatal Error (4): syntax error, unexpected '}', expecting ',' or ';' in [C:\web\htdocs\cake-FMC\app\View\Elements\menu_sup.ctp, line 8]
+2013-10-02 09:47:22 Error: [FatalErrorException] syntax error, unexpected '}', expecting ',' or ';'
+Request URL: /cake-FMC/
 Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/sys/ap...', 8)
-#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/sys/ap...', 8, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/sys/ap...', 8, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#0 C:\web\htdocs\cake-FMC\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\web\htdocs\c...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\web\htdocs\c...', 8, Array)
+#2 C:\web\htdocs\cake-FMC\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\web\htdocs\c...', 8, Array)
+#3 C:\web\htdocs\cake-FMC\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
-2013-10-02 11:37:48 Error: Fatal Error (4): syntax error, unexpected '}', expecting ',' or ';' in [/var/www/sys/app/View/Elements/menu_sup.ctp, line 8]
-2013-10-02 11:37:48 Error: [FatalErrorException] syntax error, unexpected '}', expecting ',' or ';'
-Request URL: /sys/
+2013-10-02 09:47:27 Error: Fatal Error (4): syntax error, unexpected '}', expecting ',' or ';' in [C:\web\htdocs\cake-FMC\app\View\Elements\menu_sup.ctp, line 8]
+2013-10-02 09:47:27 Error: [FatalErrorException] syntax error, unexpected '}', expecting ',' or ';'
+Request URL: /cake-FMC/
 Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/sys/ap...', 8)
-#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/sys/ap...', 8, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/sys/ap...', 8, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#0 C:\web\htdocs\cake-FMC\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\web\htdocs\c...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\web\htdocs\c...', 8, Array)
+#2 C:\web\htdocs\cake-FMC\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\web\htdocs\c...', 8, Array)
+#3 C:\web\htdocs\cake-FMC\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
-2013-10-02 11:50:28 Error: Fatal Error (4): syntax error, unexpected ')' in [/var/www/sys/app/Controller/FrontendController.php, line 35]
-2013-10-02 11:50:28 Error: [FatalErrorException] syntax error, unexpected ')'
-Request URL: /sys/
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/sys/ap...', 35)
-#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/sys/ap...', 35, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/sys/ap...', 35, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-02 11:50:44 Error: [PDOException] SQLSTATE[42883]: Undefined function: 7 ERROR:  operator does not exist: boolean = integer
-LINE 1: ..." FROM "public"."news" AS "News"   WHERE "News"."active" = 1
-                                                                    ^
-HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
-Request URL: /sys/
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT "News"."...', Array)
-#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT "News"."...', Array, Array)
-#3 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT "News"."...', false)
-#4 /var/www/sys/lib/Cake/Model/Model.php(2750): DboSource->read(Object(News), Array)
-#5 /var/www/sys/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
-#6 /var/www/sys/app/Controller/FrontendController.php(35): Model->find('all', Array)
-#7 [internal function]: FrontendController->index()
-#8 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
-#9 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#10 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#11 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#12 {main}
-2013-10-02 11:51:31 Error: Fatal Error (4): syntax error, unexpected '{' in [/var/www/sys/app/View/Frontend/index.ctp, line 4]
-2013-10-02 11:51:31 Error: [FatalErrorException] syntax error, unexpected '{'
-Request URL: /sys/
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/sys/ap...', 4)
-#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/sys/ap...', 4, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/sys/ap...', 4, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-02 11:51:54 Error: Fatal Error (4): syntax error, unexpected '{' in [/var/www/sys/app/View/Frontend/index.ctp, line 4]
-2013-10-02 11:51:54 Error: [FatalErrorException] syntax error, unexpected '{'
-Request URL: /sys/
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/sys/ap...', 4)
-#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/sys/ap...', 4, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/sys/ap...', 4, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-02 13:03:03 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/sys/app/View/Frontend/index.ctp, line 10]
-2013-10-02 13:03:03 Error: [FatalErrorException] syntax error, unexpected '}'
-Request URL: /sys/?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=13807248418727
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/sys/ap...', 10)
-#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/sys/ap...', 10, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/sys/ap...', 10, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-02 13:35:41 Error: Fatal Error (1): Unsupported operand types in [/var/www/sys/lib/Cake/View/Helper/HtmlHelper.php, line 803]
-2013-10-02 13:35:41 Error: [FatalErrorException] Unsupported operand types
-Request URL: /sys/
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Unsupported ope...', '/var/www/sys/li...', 803)
-#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', '/var/www/sys/li...', 803, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', '/var/www/sys/li...', 803, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-02 15:02:36 Error: [MissingActionException] Action FrontendController::dashboard() could not be found.
+2013-10-02 10:26:41 Error: [MissingActionException] Action FrontendController::home() could not be found.
 Exception Attributes: array (
   'controller' => 'FrontendController',
-  'action' => 'dashboard',
+  'action' => 'home',
 )
-Request URL: /sys/Frontend/dashboard
+Request URL: /cake-FMC/Frontend/home
 Stack Trace:
-#0 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#1 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#2 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#0 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
-2013-10-02 15:04:22 Error: [MissingActionException] Action FrontendController::dashboard() could not be found.
+2013-10-02 10:28:32 Error: [MissingActionException] Action FrontendController::home() could not be found.
 Exception Attributes: array (
   'controller' => 'FrontendController',
-  'action' => 'dashboard',
+  'action' => 'home',
 )
-Request URL: /sys/Frontend/dashboard
+Request URL: /cake-FMC/Frontend/home
 Stack Trace:
-#0 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#1 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#2 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#0 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
-2013-10-02 15:12:26 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "getAllResales"
-LINE 1: getAllResales
-        ^
-Request URL: /sys/participe
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getAllResales', Array)
-#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getAllResales', Array, Array)
-#3 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getAllResales', Array, Array)
-#4 /var/www/sys/lib/Cake/Model/Model.php(799): DboSource->query('getAllResales', Array, Object(UserMgmtAppModel))
-#5 /var/www/sys/app/Controller/FrontendController.php(53): Model->__call('getAllResales', Array)
-#6 /var/www/sys/app/Controller/FrontendController.php(53): UserMgmtAppModel->getAllResales()
-#7 [internal function]: FrontendController->participe()
-#8 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
-#9 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#10 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#11 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#12 {main}
-2013-10-02 15:13:52 Error: Fatal Error (1): Call to a member function getAllResales() on a non-object in [/var/www/sys/app/Controller/FrontendController.php, line 53]
-2013-10-02 15:13:52 Error: [FatalErrorException] Call to a member function getAllResales() on a non-object
-Request URL: /sys/participe
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/sys/ap...', 53)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/sys/ap...', 53, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/sys/ap...', 53, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-02 15:57:38 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ","
-LINE 1: ...ated") VALUES ('fdfsd', 'email55@email.com', Array, '', '9e1...
-                                                             ^
-Request URL: /sys/frontend/participe
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO "pu...', Array)
-#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO "pu...')
-#3 /var/www/sys/lib/Cake/Model/Model.php(1761): DboSource->create(Object(User), Array, Array)
-#4 /var/www/sys/app/Controller/FrontendController.php(108): Model->save(Array, false)
-#5 [internal function]: FrontendController->participe()
-#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
-#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2013-10-02 15:59:08 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ","
-LINE 1: ...ated") VALUES ('fdfsd', 'email55@email.com', Array, '', 'd5d...
-                                                             ^
-Request URL: /sys/frontend/participe
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO "pu...', Array)
-#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO "pu...')
-#3 /var/www/sys/lib/Cake/Model/Model.php(1761): DboSource->create(Object(User), Array, Array)
-#4 /var/www/sys/app/Controller/FrontendController.php(108): Model->save(Array, false)
-#5 [internal function]: FrontendController->participe()
-#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
-#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2013-10-02 15:59:53 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ","
-LINE 1: ...alt", "modified", "created") VALUES ('', '', Array, '', 'f98...
-                                                             ^
-Request URL: /sys/frontend/participe
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO "pu...', Array)
-#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO "pu...')
-#3 /var/www/sys/lib/Cake/Model/Model.php(1761): DboSource->create(Object(User), Array, Array)
-#4 /var/www/sys/app/Controller/FrontendController.php(108): Model->save(Array, false)
-#5 [internal function]: FrontendController->participe()
-#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
-#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2013-10-02 16:00:56 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ","
-LINE 1: ...alt", "modified", "created") VALUES ('', '', Array, '', 'b34...
-                                                             ^
-Request URL: /sys/frontend/participe
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO "pu...', Array)
-#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO "pu...')
-#3 /var/www/sys/lib/Cake/Model/Model.php(1761): DboSource->create(Object(User), Array, Array)
-#4 /var/www/sys/app/Controller/FrontendController.php(108): Model->save(Array, false)
-#5 [internal function]: FrontendController->participe()
-#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
-#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2013-10-02 16:04:50 Error: [PDOException] SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "email_verified" violates not-null constraint
-Request URL: /sys/frontend/participe
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO "pu...', Array)
-#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO "pu...')
-#3 /var/www/sys/lib/Cake/Model/Model.php(1761): DboSource->create(Object(User), Array, Array)
-#4 /var/www/sys/app/Controller/FrontendController.php(110): Model->save(Array, false)
-#5 [internal function]: FrontendController->participe()
-#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
-#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2013-10-02 16:05:25 Error: [PDOException] SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "email_verified" violates not-null constraint
-Request URL: /sys/frontend/participe
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO "pu...', Array)
-#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO "pu...')
-#3 /var/www/sys/lib/Cake/Model/Model.php(1761): DboSource->create(Object(User), Array, Array)
-#4 /var/www/sys/app/Controller/FrontendController.php(110): Model->save(Array, false)
-#5 [internal function]: FrontendController->participe()
-#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
-#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2013-10-02 16:06:22 Error: [PDOException] SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "email_verified" violates not-null constraint
-Request URL: /sys/frontend/participe
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO "pu...', Array)
-#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO "pu...')
-#3 /var/www/sys/lib/Cake/Model/Model.php(1761): DboSource->create(Object(User), Array, Array)
-#4 /var/www/sys/app/Controller/FrontendController.php(110): Model->save(Array, false)
-#5 [internal function]: FrontendController->participe()
-#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
-#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2013-10-02 16:08:32 Error: [PDOException] SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "email_verified" violates not-null constraint
-Request URL: /sys/frontend/participe
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO "pu...', Array)
-#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO "pu...')
-#3 /var/www/sys/lib/Cake/Model/Model.php(1761): DboSource->create(Object(User), Array, Array)
-#4 /var/www/sys/app/Controller/FrontendController.php(110): Model->save(Array, false)
-#5 [internal function]: FrontendController->participe()
-#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
-#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2013-10-02 16:18:29 Error: [PDOException] SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "email_verified" violates not-null constraint
-Request URL: /sys/frontend/participe
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO "pu...', Array)
-#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO "pu...')
-#3 /var/www/sys/lib/Cake/Model/Model.php(1761): DboSource->create(Object(User), Array, Array)
-#4 /var/www/sys/app/Controller/FrontendController.php(113): Model->save(Array, false)
-#5 [internal function]: FrontendController->participe()
-#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
-#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2013-10-02 16:21:25 Error: [PDOException] SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "email_verified" violates not-null constraint
-Request URL: /sys/frontend/participe
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO "pu...', Array)
-#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO "pu...')
-#3 /var/www/sys/lib/Cake/Model/Model.php(1761): DboSource->create(Object(User), Array, Array)
-#4 /var/www/sys/app/Controller/FrontendController.php(113): Model->save(Array, false)
-#5 [internal function]: FrontendController->participe()
-#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
-#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2013-10-02 16:50:13 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ","
-LINE 1: ..., "modified", "created") VALUES ('', '', '', Array, 12, '201...
-                                                             ^
-Request URL: /sys/frontend/participe
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO "pu...', Array)
-#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO "pu...')
-#3 /var/www/sys/lib/Cake/Model/Model.php(1761): DboSource->create(Object(UserDetail), Array, Array)
-#4 /var/www/sys/app/Controller/FrontendController.php(123): Model->save(Array, false)
-#5 [internal function]: FrontendController->participe()
-#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
-#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2013-10-02 16:56:06 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ","
-LINE 1: ..., "modified", "created") VALUES ('', '', '', Array, 13, '201...
-                                                             ^
-Request URL: /sys/frontend/participe
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO "pu...', Array)
-#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO "pu...')
-#3 /var/www/sys/lib/Cake/Model/Model.php(1761): DboSource->create(Object(UserDetail), Array, Array)
-#4 /var/www/sys/app/Controller/FrontendController.php(123): Model->save(Array, false)
-#5 [internal function]: FrontendController->participe()
-#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
-#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2013-10-02 17:10:51 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ","
-LINE 1: ...LUES ('campinas', 'endereço', '19 32950999', Array, 14, '201...
-                                                             ^
-Request URL: /sys/frontend/participe
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO "pu...', Array)
-#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO "pu...')
-#3 /var/www/sys/lib/Cake/Model/Model.php(1761): DboSource->create(Object(UserDetail), Array, Array)
-#4 /var/www/sys/app/Controller/FrontendController.php(114): Model->save(Array, false)
-#5 [internal function]: FrontendController->participe()
-#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
-#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2013-10-02 17:14:31 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near ","
-LINE 1: ...LUES ('campinas', 'endereço', '19 32950999', Array, 15, '201...
-                                                             ^
-Request URL: /sys/frontend/participe
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO "pu...', Array)
-#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO "pu...')
-#3 /var/www/sys/lib/Cake/Model/Model.php(1761): DboSource->create(Object(UserDetail), Array, Array)
-#4 /var/www/sys/app/Controller/FrontendController.php(114): Model->save(Array, false)
-#5 [internal function]: FrontendController->participe()
-#6 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
-#7 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#8 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#9 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#10 {main}
-2013-10-03 11:53:28 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/sys/app/Controller/FrontendController.php, line 51]
-2013-10-03 11:53:28 Error: [FatalErrorException] Call to a member function find() on a non-object
-Request URL: /sys/ranking
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/sys/ap...', 51)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/sys/ap...', 51, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/sys/ap...', 51, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-03 13:44:07 Error: Fatal Error (1): Call to undefined method FrontendController::getProductById() in [/var/www/sys/app/Controller/FrontendController.php, line 55]
-2013-10-03 13:44:07 Error: [FatalErrorException] Call to undefined method FrontendController::getProductById()
-Request URL: /sys/ranking
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/sys/ap...', 55)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/sys/ap...', 55, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/sys/ap...', 55, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-03 13:46:50 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/sys/app/Controller/FrontendController.php, line 46]
-2013-10-03 13:46:50 Error: [FatalErrorException] Call to a member function find() on a non-object
-Request URL: /sys/ranking
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/sys/ap...', 46)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/sys/ap...', 46, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/sys/ap...', 46, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-03 13:55:37 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/sys/app/Controller/FrontendController.php, line 46]
-2013-10-03 13:55:37 Error: [FatalErrorException] Call to a member function find() on a non-object
-Request URL: /sys/ranking
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/sys/ap...', 46)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/sys/ap...', 46, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/sys/ap...', 46, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-03 13:59:20 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/sys/app/Controller/FrontendController.php, line 46]
-2013-10-03 13:59:20 Error: [FatalErrorException] Call to a member function find() on a non-object
-Request URL: /sys/ranking
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/sys/ap...', 46)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/sys/ap...', 46, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/sys/ap...', 46, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-03 14:05:41 Error: [PDOException] SQLSTATE[42P01]: Undefined table: 7 ERROR:  missing FROM-clause entry for table "User"
-LINE 1: ...me" FROM "public"."products" AS "Product"   WHERE "User"."re...
-                                                             ^
-Request URL: /sys/ranking
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT "Product...', Array)
-#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT "Product...', Array, Array)
-#3 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT "Product...', false)
-#4 /var/www/sys/lib/Cake/Model/Model.php(2750): DboSource->read(Object(Product), Array)
-#5 /var/www/sys/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
-#6 /var/www/sys/app/Controller/FrontendController.php(49): Model->find('all', Array)
-#7 [internal function]: FrontendController->ranking()
-#8 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
-#9 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#10 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#11 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#12 {main}
-2013-10-03 14:07:37 Error: [PDOException] SQLSTATE[42P01]: Undefined table: 7 ERROR:  missing FROM-clause entry for table "User"
-LINE 1: ...me" FROM "public"."products" AS "Product"   WHERE "User"."re...
-                                                             ^
-Request URL: /sys/ranking
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT "Product...', Array)
-#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT "Product...', Array, Array)
-#3 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT "Product...', false)
-#4 /var/www/sys/lib/Cake/Model/Model.php(2750): DboSource->read(Object(Product), Array)
-#5 /var/www/sys/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
-#6 /var/www/sys/app/Controller/FrontendController.php(49): Model->find('all', Array)
-#7 [internal function]: FrontendController->ranking()
-#8 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
-#9 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#10 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#11 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#12 {main}
-2013-10-03 15:13:17 Error: [PDOException] SQLSTATE[42P01]: Undefined table: 7 ERROR:  missing FROM-clause entry for table "User"
-LINE 1: SELECT "User"."id" AS "User__id", "User"."first_name" AS "Us...
-               ^
-Request URL: /sys/ranking
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT "User"."...', Array)
-#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT "User"."...', Array, Array)
-#3 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT "User"."...', false)
-#4 /var/www/sys/lib/Cake/Model/Model.php(2750): DboSource->read(Object(Sale), Array)
-#5 /var/www/sys/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
-#6 /var/www/sys/app/Controller/FrontendController.php(50): Model->find('all', Array)
-#7 [internal function]: FrontendController->ranking()
-#8 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
-#9 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#10 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#11 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#12 {main}
-2013-10-03 15:16:36 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/sys/app/Controller/FrontendController.php, line 46]
-2013-10-03 15:16:36 Error: [FatalErrorException] Call to a member function find() on a non-object
-Request URL: /sys/ranking
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/sys/ap...', 46)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/sys/ap...', 46, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/sys/ap...', 46, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-03 15:17:28 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/sys/app/Controller/FrontendController.php, line 51]
-2013-10-03 15:17:28 Error: [FatalErrorException] Call to a member function find() on a non-object
-Request URL: /sys/ranking
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/sys/ap...', 51)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/sys/ap...', 51, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/sys/ap...', 51, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-03 15:21:18 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/sys/app/Controller/FrontendController.php, line 51]
-2013-10-03 15:21:18 Error: [FatalErrorException] Call to a member function find() on a non-object
-Request URL: /sys/ranking
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/sys/ap...', 51)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/sys/ap...', 51, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/sys/ap...', 51, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-03 15:22:32 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/sys/app/Controller/FrontendController.php, line 51]
-2013-10-03 15:22:32 Error: [FatalErrorException] Call to a member function find() on a non-object
-Request URL: /sys/ranking
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/sys/ap...', 51)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/sys/ap...', 51, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/sys/ap...', 51, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-03 15:24:09 Error: [PDOException] SQLSTATE[42P01]: Undefined table: 7 ERROR:  missing FROM-clause entry for table "User"
-LINE 1: SELECT "User"."id" AS "User__id", "User"."first_name" AS "Us...
-               ^
-Request URL: /sys/ranking
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT "User"."...', Array)
-#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT "User"."...', Array, Array)
-#3 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT "User"."...', false)
-#4 /var/www/sys/lib/Cake/Model/Model.php(2750): DboSource->read(Object(AppModel), Array)
-#5 /var/www/sys/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
-#6 /var/www/sys/app/Controller/FrontendController.php(50): Model->find('all', Array)
-#7 [internal function]: FrontendController->ranking()
-#8 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
-#9 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#10 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#11 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#12 {main}
-2013-10-03 15:25:52 Error: [PDOException] SQLSTATE[42P01]: Undefined table: 7 ERROR:  missing FROM-clause entry for table "Sale"
-LINE 1: ...__id", "User"."first_name" AS "User__first_name", "Sale"."pr...
-                                                             ^
-Request URL: /sys/ranking
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT "User"."...', Array)
-#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT "User"."...', Array, Array)
-#3 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT "User"."...', false)
-#4 /var/www/sys/lib/Cake/Model/Model.php(2750): DboSource->read(Object(User), Array)
-#5 /var/www/sys/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
-#6 /var/www/sys/app/Controller/FrontendController.php(50): Model->find('all', Array)
-#7 [internal function]: FrontendController->ranking()
-#8 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
-#9 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#10 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#11 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#12 {main}
-2013-10-03 15:27:20 Error: [PDOException] SQLSTATE[42P01]: Undefined table: 7 ERROR:  missing FROM-clause entry for table "Sale"
-LINE 1: ...__id", "User"."first_name" AS "User__first_name", "Sale"."pr...
-                                                             ^
-Request URL: /sys/ranking
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT "User"."...', Array)
-#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT "User"."...', Array, Array)
-#3 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT "User"."...', false)
-#4 /var/www/sys/lib/Cake/Model/Model.php(2750): DboSource->read(Object(User), Array)
-#5 /var/www/sys/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
-#6 /var/www/sys/app/Controller/FrontendController.php(50): Model->find('all', Array)
-#7 [internal function]: FrontendController->ranking()
-#8 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
-#9 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#10 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#11 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#12 {main}
-2013-10-03 15:38:43 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/sys/app/Controller/FrontendController.php, line 50]
-2013-10-03 15:38:43 Error: [FatalErrorException] Call to a member function find() on a non-object
-Request URL: /sys/ranking
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/sys/ap...', 50)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/sys/ap...', 50, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/sys/ap...', 50, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-03 15:39:17 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/sys/app/Controller/FrontendController.php, line 50]
-2013-10-03 15:39:17 Error: [FatalErrorException] Call to a member function find() on a non-object
-Request URL: /sys/ranking
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/sys/ap...', 50)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/sys/ap...', 50, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/sys/ap...', 50, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-03 15:50:27 Error: Fatal Error (64): Cannot redeclare User::$hasOne in [/var/www/sys/app/Plugin/Usermgmt/Model/User.php, line 40]
-2013-10-03 15:50:27 Error: [FatalErrorException] Cannot redeclare User::$hasOne
-Request URL: /sys/ranking
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/sys/ap...', 40)
-#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/sys/ap...', 40, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/sys/ap...', 40, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-03 16:06:34 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/sys/app/Controller/FrontendController.php, line 46]
-2013-10-03 16:06:34 Error: [FatalErrorException] Call to a member function find() on a non-object
-Request URL: /sys/ranking
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/sys/ap...', 46)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/sys/ap...', 46, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/sys/ap...', 46, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-03 16:09:19 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/sys/app/Controller/FrontendController.php, line 46]
-2013-10-03 16:09:19 Error: [FatalErrorException] Call to a member function find() on a non-object
-Request URL: /sys/ranking
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/sys/ap...', 46)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/sys/ap...', 46, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/sys/ap...', 46, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-03 16:17:15 Error: [MissingControllerException] Controller class FrontendController could not be found.
+2013-10-02 16:07:38 Warning: Warning (512): _cake_core_ cache was unable to write 'file_map' to File cache in [C:\web\htdocs\cake-FMC\lib\Cake\Cache\Cache.php, line 325]
+Trace:
+Cache::write() - CORE\Cake\Cache\Cache.php, line 325
+App::shutdown() - CORE\Cake\Core\App.php, line 899
+[main] - [internal], line ??
+
+2013-10-02 11:38:50 Warning: Warning (4096): Object of class HtmlHelper could not be converted to string in [C:\web\htdocs\cake-FMC\app\View\Elements\header.ctp, line 27]
+Trace:
+include - APP\View\Elements\header.ctp, line 27
+View::_evaluate() - CORE\Cake\View\View.php, line 931
+View::_render() - CORE\Cake\View\View.php, line 893
+View::_renderElement() - CORE\Cake\View\View.php, line 1191
+View::element() - CORE\Cake\View\View.php, line 408
+include - APP\View\Layouts\frontend.ctp, line 35
+View::_evaluate() - CORE\Cake\View\View.php, line 931
+View::_render() - CORE\Cake\View\View.php, line 893
+View::renderLayout() - CORE\Cake\View\View.php, line 525
+View::render() - CORE\Cake\View\View.php, line 470
+Controller::render() - CORE\Cake\Controller\Controller.php, line 952
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 194
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 110
+
+2013-10-02 16:42:16 Error: [MissingControllerException] Controller class ImgController could not be found.
 Exception Attributes: array (
-  'class' => 'FrontendController',
+  'class' => 'ImgController',
   'plugin' => NULL,
 )
-Request URL: /sys/ranking
+Request URL: /cake-FMC/img/cake_logo.png
 Stack Trace:
-#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#0 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-10-03 16:28:37 Error: [MissingActionException] Action FrontendController::participe() could not be found.
+2013-10-02 16:42:20 Error: [MissingControllerException] Controller class ImgController could not be found.
 Exception Attributes: array (
-  'controller' => 'FrontendController',
-  'action' => 'participe',
-)
-Request URL: /sys/usermgmt/frontend/participe
-Stack Trace:
-#0 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#1 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#2 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 {main}
-2013-10-03 16:30:12 Error: [MissingControllerException] Controller class TesteController could not be found.
-Exception Attributes: array (
-  'class' => 'TesteController',
-  'plugin' => 'Usermgmt',
-)
-Request URL: /sys/usermgmt/teste/participe
-Stack Trace:
-#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2013-10-03 16:30:45 Error: [MissingControllerException] Controller class FrontendController could not be found.
-Exception Attributes: array (
-  'class' => 'FrontendController',
+  'class' => 'ImgController',
   'plugin' => NULL,
 )
-Request URL: /sys/frontend/participe
+Request URL: /cake-FMC/img/cake_logo.png
 Stack Trace:
-#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#0 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-10-03 16:31:33 Error: [MissingControllerException] Controller class FrontendController could not be found.
+2013-10-02 19:11:04 Error: [MissingControllerException] Controller class ImgController could not be found.
 Exception Attributes: array (
-  'class' => 'FrontendController',
+  'class' => 'ImgController',
   'plugin' => NULL,
 )
-Request URL: /sys/frontend/participe
+Request URL: /cake-FMC/img/aba.jpg
 Stack Trace:
-#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#0 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-10-03 16:31:57 Error: [MissingControllerException] Controller class ArticipeController could not be found.
+2013-10-02 19:41:23 Error: [MissingControllerException] Controller class ImgController could not be found.
 Exception Attributes: array (
-  'class' => 'ArticipeController',
+  'class' => 'ImgController',
   'plugin' => NULL,
 )
-Request URL: /sys/articipe
+Request URL: /cake-FMC/img/bg-contador.jpg
 Stack Trace:
-#0 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#0 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-10-03 16:52:28 Error: [PDOException] SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "findAll"
-LINE 1: findAll
-        ^
-Request URL: /sys/ranking
+2013-10-02 19:41:25 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cake-FMC/img/bg-contador.jpg
 Stack Trace:
-#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('findAll', Array)
-#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('findAll', Array, Array)
-#3 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('findAll', Array, Array)
-#4 /var/www/sys/lib/Cake/Model/Model.php(799): DboSource->query('findAll', Array, Object(User))
-#5 /var/www/sys/app/Plugin/Usermgmt/Controller/FrontendController.php(51): Model->__call('findAll', Array)
-#6 /var/www/sys/app/Plugin/Usermgmt/Controller/FrontendController.php(51): User->findAll()
-#7 [internal function]: FrontendController->ranking()
-#8 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
-#9 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#10 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#11 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#12 {main}
-2013-10-03 17:23:04 Error: Fatal Error (4): syntax error, unexpected '*' in [/var/www/sys/app/Plugin/Usermgmt/Controller/FrontendController.php, line 50]
-2013-10-03 17:23:04 Error: [FatalErrorException] syntax error, unexpected '*'
-Request URL: /sys/?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=138083178411220
+#0 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-02 19:42:01 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cake-FMC/img/bg-contador.jpg
 Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/sys/ap...', 50)
-#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/sys/ap...', 50, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/sys/ap...', 50, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#0 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-02 20:06:16 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cake-FMC/img/digits.png
+Stack Trace:
+#0 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-02 20:06:50 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cake-FMC/img/digits.png
+Stack Trace:
+#0 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-02 20:54:07 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cake-FMC/img/aba-login.jpg
+Stack Trace:
+#0 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-02 20:54:25 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cake-FMC/img/aba-form.jpg
+Stack Trace:
+#0 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-02 16:40:51 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\web\htdocs\cake-FMC\app\View\Elements\footer.ctp, line 5]
+2013-10-02 16:40:51 Error: [InternalErrorException] Internal Server Error
+Request URL: /cake-FMC/
+Stack Trace:
+#0 C:\web\htdocs\cake-FMC\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\web\htdocs\c...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\web\htdocs\c...', 5, Array)
+#2 C:\web\htdocs\cake-FMC\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\web\htdocs\c...', 5, Array)
+#3 C:\web\htdocs\cake-FMC\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
-2013-10-03 17:23:11 Error: Fatal Error (4): syntax error, unexpected '*' in [/var/www/sys/app/Plugin/Usermgmt/Controller/FrontendController.php, line 50]
-2013-10-03 17:23:11 Error: [FatalErrorException] syntax error, unexpected '*'
-Request URL: /sys/ranking
+2013-10-03 09:07:55 Error: [MissingConnectionException] Database connection "Postgres" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Postgres',
+  'message' => 'SQLSTATE[08006] [7] could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host "192.168.1.109" and accepting
+	TCP/IP connections on port 5432?',
+  'enabled' => true,
+)
+Request URL: /cake-FMC/
 Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/sys/ap...', 50)
-#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/sys/ap...', 50, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/sys/ap...', 50, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-03 17:37:05 Error: Fatal Error (1): Call to a member function getProductById() on a non-object in [/var/www/sys/app/Plugin/Usermgmt/Controller/SalesController.php, line 77]
-2013-10-03 17:37:05 Error: [FatalErrorException] Call to a member function getProductById() on a non-object
-Request URL: /sys/usermgmt/Sales
+#0 C:\web\htdocs\cake-FMC\lib\Cake\Model\Datasource\DboSource.php(262): Postgres->connect()
+#1 C:\web\htdocs\cake-FMC\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3310): Model->setSource('news')
+#5 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(2750): Model->getDataSource()
+#6 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(2722): Model->_readDataSource('all', Array)
+#7 C:\web\htdocs\cake-FMC\app\Controller\FrontendController.php(34): Model->find('all')
+#8 [internal function]: FrontendController->index()
+#9 C:\web\htdocs\cake-FMC\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
+#10 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-10-03 09:11:56 Error: [MissingConnectionException] Database connection "Postgres" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Postgres',
+  'message' => 'SQLSTATE[08006] [7] could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host "192.168.1.109" and accepting
+	TCP/IP connections on port 5432?',
+  'enabled' => true,
+)
+Request URL: /cake-FMC/
 Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/sys/ap...', 77)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/sys/ap...', 77, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/sys/ap...', 77, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-03 17:39:11 Error: Fatal Error (1): Call to a member function getUserNameById() on a non-object in [/var/www/sys/app/Plugin/Usermgmt/Controller/SalesController.php, line 75]
-2013-10-03 17:39:11 Error: [FatalErrorException] Call to a member function getUserNameById() on a non-object
-Request URL: /sys/usermgmt/Sales
+#0 C:\web\htdocs\cake-FMC\lib\Cake\Model\Datasource\DboSource.php(262): Postgres->connect()
+#1 C:\web\htdocs\cake-FMC\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3310): Model->setSource('news')
+#5 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(2750): Model->getDataSource()
+#6 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(2722): Model->_readDataSource('all', Array)
+#7 C:\web\htdocs\cake-FMC\app\Controller\FrontendController.php(34): Model->find('all')
+#8 [internal function]: FrontendController->index()
+#9 C:\web\htdocs\cake-FMC\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
+#10 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-10-03 09:18:15 Error: [MissingConnectionException] Database connection "Postgres" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Postgres',
+  'message' => 'SQLSTATE[08006] [7] could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host "192.168.1.109" and accepting
+	TCP/IP connections on port 5432?',
+  'enabled' => true,
+)
+Request URL: /cake-FMC/
 Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/sys/ap...', 75)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/sys/ap...', 75, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/sys/ap...', 75, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-03 17:39:27 Error: Fatal Error (1): Call to a member function getUserNameById() on a non-object in [/var/www/sys/app/Plugin/Usermgmt/Controller/SalesController.php, line 75]
-2013-10-03 17:39:27 Error: [FatalErrorException] Call to a member function getUserNameById() on a non-object
-Request URL: /sys/usermgmt/Sales
+#0 C:\web\htdocs\cake-FMC\lib\Cake\Model\Datasource\DboSource.php(262): Postgres->connect()
+#1 C:\web\htdocs\cake-FMC\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3310): Model->setSource('news')
+#5 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(2750): Model->getDataSource()
+#6 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(2722): Model->_readDataSource('all', Array)
+#7 C:\web\htdocs\cake-FMC\app\Controller\FrontendController.php(34): Model->find('all')
+#8 [internal function]: FrontendController->index()
+#9 C:\web\htdocs\cake-FMC\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
+#10 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-10-03 15:06:20 Warning: Warning (512): _cake_core_ cache was unable to write 'file_map' to File cache in [C:\web\htdocs\cake-FMC\lib\Cake\Cache\Cache.php, line 325]
+Trace:
+Cache::write() - CORE\Cake\Cache\Cache.php, line 325
+App::shutdown() - CORE\Cake\Core\App.php, line 899
+[main] - [internal], line ??
+
+2013-10-03 18:51:05 Warning: Warning (512): _cake_core_ cache was unable to write 'file_map' to File cache in [C:\web\htdocs\cake-FMC\lib\Cake\Cache\Cache.php, line 325]
+Trace:
+Cache::write() - CORE\Cake\Cache\Cache.php, line 325
+App::shutdown() - CORE\Cake\Core\App.php, line 899
+[main] - [internal], line ??
+
+2013-10-03 21:37:43 Error: [MissingControllerException] Controller class TabelaController could not be found.
+Exception Attributes: array (
+  'class' => 'TabelaController',
+  'plugin' => NULL,
+)
+Request URL: /cake-FMC/tabela
 Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/sys/ap...', 75)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/sys/ap...', 75, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/sys/ap...', 75, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-04 10:03:37 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/var/www/sys/lib/Cake/Utility/Debugger.php, line 489]
-2013-10-04 10:03:37 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
-Request URL: /sys/ranking
+#0 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-03 21:39:18 Error: [MissingControllerException] Controller class TabelaController could not be found.
+Exception Attributes: array (
+  'class' => 'TabelaController',
+  'plugin' => NULL,
+)
+Request URL: /cake-FMC/tabela
 Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/var/www/sys/li...', 489)
-#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/var/www/sys/li...', 489, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/var/www/sys/li...', 489, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-10-04 10:14:21 Error: [PDOException] SQLSTATE[42703]: Undefined column: 7 ERROR:  column u.image does not exist
-LINE 1: select u.id, u.first_name as nome, u.image, sum(s.litros_hec...
-                                           ^
-Request URL: /sys/ranking
+#0 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-03 21:39:20 Error: [MissingControllerException] Controller class TabelaController could not be found.
+Exception Attributes: array (
+  'class' => 'TabelaController',
+  'plugin' => NULL,
+)
+Request URL: /cake-FMC/tabela
 Stack Trace:
-#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('select u.id, u....', Array)
-#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('select u.id, u....', Array, Array)
-#3 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(539): DboSource->fetchAll('select u.id, u....')
-#4 [internal function]: DboSource->query('select u.id, u....')
-#5 /var/www/sys/lib/Cake/Model/Model.php(3128): call_user_func_array(Array, Array)
-#6 /var/www/sys/app/Plugin/Usermgmt/Controller/FrontendController.php(57): Model->query('select u.id, u....')
-#7 [internal function]: FrontendController->ranking()
-#8 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
-#9 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#10 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#11 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#12 {main}
-2013-10-04 10:14:37 Error: [PDOException] SQLSTATE[42703]: Undefined column: 7 ERROR:  column u.image does not exist
-LINE 1: select u.id, u.first_name as nome, u.image, sum(s.litros_hec...
-                                           ^
-Request URL: /sys/ranking
+#0 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-03 21:39:21 Error: [MissingControllerException] Controller class TabelaController could not be found.
+Exception Attributes: array (
+  'class' => 'TabelaController',
+  'plugin' => NULL,
+)
+Request URL: /cake-FMC/tabela
 Stack Trace:
-#0 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
-#1 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('select u.id, u....', Array)
-#2 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('select u.id, u....', Array, Array)
-#3 /var/www/sys/lib/Cake/Model/Datasource/DboSource.php(539): DboSource->fetchAll('select u.id, u....')
-#4 [internal function]: DboSource->query('select u.id, u....')
-#5 /var/www/sys/lib/Cake/Model/Model.php(3128): call_user_func_array(Array, Array)
-#6 /var/www/sys/app/Plugin/Usermgmt/Controller/FrontendController.php(57): Model->query('select u.id, u....')
-#7 [internal function]: FrontendController->ranking()
-#8 /var/www/sys/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
-#9 /var/www/sys/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#10 /var/www/sys/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
-#11 /var/www/sys/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#12 {main}
-2013-10-04 10:22:01 Error: Fatal Error (4): syntax error, unexpected end of file in [/var/www/sys/app/Plugin/Usermgmt/View/Frontend/ranking.ctp, line 23]
-2013-10-04 10:22:01 Error: [FatalErrorException] syntax error, unexpected end of file
-Request URL: /sys/ranking
+#0 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-03 21:39:21 Error: [MissingControllerException] Controller class TabelaController could not be found.
+Exception Attributes: array (
+  'class' => 'TabelaController',
+  'plugin' => NULL,
+)
+Request URL: /cake-FMC/tabela
 Stack Trace:
-#0 /var/www/sys/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/sys/ap...', 23)
-#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/sys/ap...', 23, Array)
-#2 /var/www/sys/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/sys/ap...', 23, Array)
-#3 /var/www/sys/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#0 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-03 21:39:23 Error: [MissingControllerException] Controller class TabelaController could not be found.
+Exception Attributes: array (
+  'class' => 'TabelaController',
+  'plugin' => NULL,
+)
+Request URL: /cake-FMC/tabela
+Stack Trace:
+#0 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-03 21:41:33 Error: [MissingControllerException] Controller class TabelaController could not be found.
+Exception Attributes: array (
+  'class' => 'TabelaController',
+  'plugin' => NULL,
+)
+Request URL: /cake-FMC/tabela
+Stack Trace:
+#0 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-03 21:41:34 Error: [MissingControllerException] Controller class TabelaController could not be found.
+Exception Attributes: array (
+  'class' => 'TabelaController',
+  'plugin' => NULL,
+)
+Request URL: /cake-FMC/tabela
+Stack Trace:
+#0 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-03 21:41:35 Error: [MissingControllerException] Controller class TabelaController could not be found.
+Exception Attributes: array (
+  'class' => 'TabelaController',
+  'plugin' => NULL,
+)
+Request URL: /cake-FMC/tabela
+Stack Trace:
+#0 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-03 21:41:36 Error: [MissingControllerException] Controller class TabelaController could not be found.
+Exception Attributes: array (
+  'class' => 'TabelaController',
+  'plugin' => NULL,
+)
+Request URL: /cake-FMC/tabela
+Stack Trace:
+#0 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-03 21:42:04 Error: [MissingControllerException] Controller class TabelaController could not be found.
+Exception Attributes: array (
+  'class' => 'TabelaController',
+  'plugin' => NULL,
+)
+Request URL: /cake-FMC/tabela
+Stack Trace:
+#0 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-04 09:03:10 Error: [MissingConnectionException] Database connection "Postgres" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Postgres',
+  'message' => 'SQLSTATE[08006] [7] could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "192.168.1.109" and accepting
+	TCP/IP connections on port 5432?',
+  'enabled' => true,
+)
+Request URL: /cake-FMC/
+Stack Trace:
+#0 C:\web\htdocs\cake-FMC\lib\Cake\Model\Datasource\DboSource.php(262): Postgres->connect()
+#1 C:\web\htdocs\cake-FMC\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3310): Model->setSource('news')
+#5 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(2750): Model->getDataSource()
+#6 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(2722): Model->_readDataSource('all', Array)
+#7 C:\web\htdocs\cake-FMC\app\Controller\FrontendController.php(34): Model->find('all')
+#8 [internal function]: FrontendController->index()
+#9 C:\web\htdocs\cake-FMC\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
+#10 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-10-04 09:03:15 Error: [MissingConnectionException] Database connection "Postgres" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Postgres',
+  'message' => 'SQLSTATE[08006] [7] could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "192.168.1.109" and accepting
+	TCP/IP connections on port 5432?',
+  'enabled' => true,
+)
+Request URL: /cake-FMC/
+Stack Trace:
+#0 C:\web\htdocs\cake-FMC\lib\Cake\Model\Datasource\DboSource.php(262): Postgres->connect()
+#1 C:\web\htdocs\cake-FMC\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3310): Model->setSource('news')
+#5 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(2750): Model->getDataSource()
+#6 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(2722): Model->_readDataSource('all', Array)
+#7 C:\web\htdocs\cake-FMC\app\Controller\FrontendController.php(34): Model->find('all')
+#8 [internal function]: FrontendController->index()
+#9 C:\web\htdocs\cake-FMC\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
+#10 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-10-04 14:08:00 Warning: Warning (512): _cake_core_ cache was unable to write 'file_map' to File cache in [C:\web\htdocs\cake-FMC\lib\Cake\Cache\Cache.php, line 325]
+Trace:
+Cache::write() - CORE\Cake\Cache\Cache.php, line 325
+App::shutdown() - CORE\Cake\Core\App.php, line 899
+[main] - [internal], line ??
+
+2013-10-04 09:21:30 Error: [MissingConnectionException] Database connection "Postgres" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Postgres',
+  'message' => 'SQLSTATE[08006] [7] could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host "192.168.1.109" and accepting
+	TCP/IP connections on port 5432?',
+  'enabled' => true,
+)
+Request URL: /cake-FMC/tabela
+Stack Trace:
+#0 C:\web\htdocs\cake-FMC\lib\Cake\Model\Datasource\DboSource.php(262): Postgres->connect()
+#1 C:\web\htdocs\cake-FMC\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\web\htdocs\cake-FMC\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\web\htdocs\cake-FMC\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\web\htdocs\cake-FMC\app\View\Elements\login.ctp(6): FormHelper->create('User', Array)
+#9 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#10 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#11 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(1191): View->_render('C:\web\htdocs\c...', Array)
+#12 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(408): View->_renderElement('C:\web\htdocs\c...', Array, Array)
+#13 C:\web\htdocs\cake-FMC\app\View\Elements\header.ctp(9): View->element('login')
+#14 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#15 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#16 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(1191): View->_render('C:\web\htdocs\c...', Array)
+#17 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(408): View->_renderElement('C:\web\htdocs\c...', Array, Array)
+#18 C:\web\htdocs\cake-FMC\app\View\Layouts\frontend.ctp(49): View->element('header')
+#19 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#20 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#21 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(525): View->_render('C:\web\htdocs\c...')
+#22 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(470): View->renderLayout('', 'frontend')
+#23 C:\web\htdocs\cake-FMC\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#24 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#25 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
+#26 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#27 {main}
+2013-10-04 09:21:55 Error: [MissingConnectionException] Database connection "Postgres" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Postgres',
+  'message' => 'SQLSTATE[08006] [7] could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host "192.168.1.109" and accepting
+	TCP/IP connections on port 5432?',
+  'enabled' => true,
+)
+Request URL: /cake-FMC/tabela
+Stack Trace:
+#0 C:\web\htdocs\cake-FMC\lib\Cake\Model\Datasource\DboSource.php(262): Postgres->connect()
+#1 C:\web\htdocs\cake-FMC\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\web\htdocs\cake-FMC\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\web\htdocs\cake-FMC\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\web\htdocs\cake-FMC\app\View\Elements\login.ctp(6): FormHelper->create('User', Array)
+#9 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#10 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#11 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(1191): View->_render('C:\web\htdocs\c...', Array)
+#12 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(408): View->_renderElement('C:\web\htdocs\c...', Array, Array)
+#13 C:\web\htdocs\cake-FMC\app\View\Elements\header.ctp(9): View->element('login')
+#14 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#15 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#16 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(1191): View->_render('C:\web\htdocs\c...', Array)
+#17 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(408): View->_renderElement('C:\web\htdocs\c...', Array, Array)
+#18 C:\web\htdocs\cake-FMC\app\View\Layouts\frontend.ctp(49): View->element('header')
+#19 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#20 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#21 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(525): View->_render('C:\web\htdocs\c...')
+#22 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(470): View->renderLayout('', 'frontend')
+#23 C:\web\htdocs\cake-FMC\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#24 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#25 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
+#26 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#27 {main}
+2013-10-04 09:22:17 Error: [MissingConnectionException] Database connection "Postgres" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Postgres',
+  'message' => 'SQLSTATE[08006] [7] FATAL:  the database system is starting up',
+  'enabled' => true,
+)
+Request URL: /cake-FMC/tabela
+Stack Trace:
+#0 C:\web\htdocs\cake-FMC\lib\Cake\Model\Datasource\DboSource.php(262): Postgres->connect()
+#1 C:\web\htdocs\cake-FMC\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\web\htdocs\cake-FMC\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\web\htdocs\cake-FMC\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\web\htdocs\cake-FMC\app\View\Elements\login.ctp(6): FormHelper->create('User', Array)
+#9 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#10 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#11 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(1191): View->_render('C:\web\htdocs\c...', Array)
+#12 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(408): View->_renderElement('C:\web\htdocs\c...', Array, Array)
+#13 C:\web\htdocs\cake-FMC\app\View\Elements\header.ctp(9): View->element('login')
+#14 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#15 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#16 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(1191): View->_render('C:\web\htdocs\c...', Array)
+#17 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(408): View->_renderElement('C:\web\htdocs\c...', Array, Array)
+#18 C:\web\htdocs\cake-FMC\app\View\Layouts\frontend.ctp(49): View->element('header')
+#19 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#20 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#21 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(525): View->_render('C:\web\htdocs\c...')
+#22 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(470): View->renderLayout('', 'frontend')
+#23 C:\web\htdocs\cake-FMC\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#24 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#25 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
+#26 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#27 {main}
+2013-10-04 09:25:31 Error: [MissingConnectionException] Database connection "Postgres" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Postgres',
+  'message' => 'SQLSTATE[08006] [7] could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host "192.168.1.109" and accepting
+	TCP/IP connections on port 5432?',
+  'enabled' => true,
+)
+Request URL: /cake-FMC/tabela
+Stack Trace:
+#0 C:\web\htdocs\cake-FMC\lib\Cake\Model\Datasource\DboSource.php(262): Postgres->connect()
+#1 C:\web\htdocs\cake-FMC\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\web\htdocs\cake-FMC\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\web\htdocs\cake-FMC\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\web\htdocs\cake-FMC\app\View\Elements\login.ctp(6): FormHelper->create('User', Array)
+#9 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#10 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#11 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(1191): View->_render('C:\web\htdocs\c...', Array)
+#12 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(408): View->_renderElement('C:\web\htdocs\c...', Array, Array)
+#13 C:\web\htdocs\cake-FMC\app\View\Elements\header.ctp(9): View->element('login')
+#14 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#15 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#16 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(1191): View->_render('C:\web\htdocs\c...', Array)
+#17 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(408): View->_renderElement('C:\web\htdocs\c...', Array, Array)
+#18 C:\web\htdocs\cake-FMC\app\View\Layouts\frontend.ctp(49): View->element('header')
+#19 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#20 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#21 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(525): View->_render('C:\web\htdocs\c...')
+#22 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(470): View->renderLayout('', 'frontend')
+#23 C:\web\htdocs\cake-FMC\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#24 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#25 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
+#26 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#27 {main}
+2013-10-04 09:31:33 Error: [MissingConnectionException] Database connection "Postgres" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Postgres',
+  'message' => 'SQLSTATE[08006] [7] could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host "192.168.1.109" and accepting
+	TCP/IP connections on port 5432?',
+  'enabled' => true,
+)
+Request URL: /cake-FMC/tabela
+Stack Trace:
+#0 C:\web\htdocs\cake-FMC\lib\Cake\Model\Datasource\DboSource.php(262): Postgres->connect()
+#1 C:\web\htdocs\cake-FMC\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\web\htdocs\cake-FMC\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\web\htdocs\cake-FMC\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\web\htdocs\cake-FMC\app\View\Elements\login.ctp(6): FormHelper->create('User', Array)
+#9 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#10 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#11 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(1191): View->_render('C:\web\htdocs\c...', Array)
+#12 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(408): View->_renderElement('C:\web\htdocs\c...', Array, Array)
+#13 C:\web\htdocs\cake-FMC\app\View\Elements\header.ctp(9): View->element('login')
+#14 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#15 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#16 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(1191): View->_render('C:\web\htdocs\c...', Array)
+#17 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(408): View->_renderElement('C:\web\htdocs\c...', Array, Array)
+#18 C:\web\htdocs\cake-FMC\app\View\Layouts\frontend.ctp(49): View->element('header')
+#19 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#20 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#21 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(525): View->_render('C:\web\htdocs\c...')
+#22 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(470): View->renderLayout('', 'frontend')
+#23 C:\web\htdocs\cake-FMC\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#24 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#25 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
+#26 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#27 {main}
+2013-10-04 09:32:02 Error: [MissingConnectionException] Database connection "Postgres" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Postgres',
+  'message' => 'SQLSTATE[08006] [7] could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host "192.168.1.109" and accepting
+	TCP/IP connections on port 5432?',
+  'enabled' => true,
+)
+Request URL: /cake-FMC/tabela
+Stack Trace:
+#0 C:\web\htdocs\cake-FMC\lib\Cake\Model\Datasource\DboSource.php(262): Postgres->connect()
+#1 C:\web\htdocs\cake-FMC\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\web\htdocs\cake-FMC\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\web\htdocs\cake-FMC\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\web\htdocs\cake-FMC\app\View\Elements\login.ctp(6): FormHelper->create('User', Array)
+#9 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#10 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#11 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(1191): View->_render('C:\web\htdocs\c...', Array)
+#12 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(408): View->_renderElement('C:\web\htdocs\c...', Array, Array)
+#13 C:\web\htdocs\cake-FMC\app\View\Elements\header.ctp(9): View->element('login')
+#14 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#15 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#16 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(1191): View->_render('C:\web\htdocs\c...', Array)
+#17 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(408): View->_renderElement('C:\web\htdocs\c...', Array, Array)
+#18 C:\web\htdocs\cake-FMC\app\View\Layouts\frontend.ctp(49): View->element('header')
+#19 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#20 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#21 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(525): View->_render('C:\web\htdocs\c...')
+#22 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(470): View->renderLayout('', 'frontend')
+#23 C:\web\htdocs\cake-FMC\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#24 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#25 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
+#26 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#27 {main}
+2013-10-04 09:32:31 Error: [MissingConnectionException] Database connection "Postgres" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Postgres',
+  'message' => 'SQLSTATE[08006] [7] could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "192.168.1.109" and accepting
+	TCP/IP connections on port 5432?',
+  'enabled' => true,
+)
+Request URL: /cake-FMC/tabela
+Stack Trace:
+#0 C:\web\htdocs\cake-FMC\lib\Cake\Model\Datasource\DboSource.php(262): Postgres->connect()
+#1 C:\web\htdocs\cake-FMC\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\web\htdocs\cake-FMC\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\web\htdocs\cake-FMC\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\web\htdocs\cake-FMC\app\View\Elements\login.ctp(6): FormHelper->create('User', Array)
+#9 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#10 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#11 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(1191): View->_render('C:\web\htdocs\c...', Array)
+#12 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(408): View->_renderElement('C:\web\htdocs\c...', Array, Array)
+#13 C:\web\htdocs\cake-FMC\app\View\Elements\header.ctp(9): View->element('login')
+#14 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#15 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#16 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(1191): View->_render('C:\web\htdocs\c...', Array)
+#17 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(408): View->_renderElement('C:\web\htdocs\c...', Array, Array)
+#18 C:\web\htdocs\cake-FMC\app\View\Layouts\frontend.ctp(49): View->element('header')
+#19 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#20 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#21 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(525): View->_render('C:\web\htdocs\c...')
+#22 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(470): View->renderLayout('', 'frontend')
+#23 C:\web\htdocs\cake-FMC\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#24 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#25 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
+#26 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#27 {main}
+2013-10-04 09:35:13 Error: [MissingConnectionException] Database connection "Postgres" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Postgres',
+  'message' => 'SQLSTATE[08006] [7] could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host "192.168.1.109" and accepting
+	TCP/IP connections on port 5432?',
+  'enabled' => true,
+)
+Request URL: /cake-FMC/tabela
+Stack Trace:
+#0 C:\web\htdocs\cake-FMC\lib\Cake\Model\Datasource\DboSource.php(262): Postgres->connect()
+#1 C:\web\htdocs\cake-FMC\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\web\htdocs\cake-FMC\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\web\htdocs\cake-FMC\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\web\htdocs\cake-FMC\app\View\Elements\login.ctp(6): FormHelper->create('User', Array)
+#9 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#10 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#11 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(1191): View->_render('C:\web\htdocs\c...', Array)
+#12 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(408): View->_renderElement('C:\web\htdocs\c...', Array, Array)
+#13 C:\web\htdocs\cake-FMC\app\View\Elements\header.ctp(9): View->element('login')
+#14 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#15 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#16 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(1191): View->_render('C:\web\htdocs\c...', Array)
+#17 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(408): View->_renderElement('C:\web\htdocs\c...', Array, Array)
+#18 C:\web\htdocs\cake-FMC\app\View\Layouts\frontend.ctp(49): View->element('header')
+#19 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#20 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#21 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(525): View->_render('C:\web\htdocs\c...')
+#22 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(470): View->renderLayout('', 'frontend')
+#23 C:\web\htdocs\cake-FMC\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#24 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#25 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
+#26 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#27 {main}
+2013-10-04 09:35:39 Error: [MissingConnectionException] Database connection "Postgres" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Postgres',
+  'message' => 'SQLSTATE[08006] [7] could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host "192.168.1.109" and accepting
+	TCP/IP connections on port 5432?',
+  'enabled' => true,
+)
+Request URL: /cake-FMC/tabela
+Stack Trace:
+#0 C:\web\htdocs\cake-FMC\lib\Cake\Model\Datasource\DboSource.php(262): Postgres->connect()
+#1 C:\web\htdocs\cake-FMC\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\web\htdocs\cake-FMC\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\web\htdocs\cake-FMC\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\web\htdocs\cake-FMC\app\View\Elements\login.ctp(6): FormHelper->create('User', Array)
+#9 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#10 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#11 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(1191): View->_render('C:\web\htdocs\c...', Array)
+#12 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(408): View->_renderElement('C:\web\htdocs\c...', Array, Array)
+#13 C:\web\htdocs\cake-FMC\app\View\Elements\header.ctp(9): View->element('login')
+#14 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#15 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#16 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(1191): View->_render('C:\web\htdocs\c...', Array)
+#17 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(408): View->_renderElement('C:\web\htdocs\c...', Array, Array)
+#18 C:\web\htdocs\cake-FMC\app\View\Layouts\frontend.ctp(49): View->element('header')
+#19 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#20 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#21 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(525): View->_render('C:\web\htdocs\c...')
+#22 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(470): View->renderLayout('', 'frontend')
+#23 C:\web\htdocs\cake-FMC\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#24 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#25 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
+#26 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#27 {main}
+2013-10-04 09:36:07 Error: [MissingConnectionException] Database connection "Postgres" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Postgres',
+  'message' => 'SQLSTATE[08006] [7] could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host "192.168.1.109" and accepting
+	TCP/IP connections on port 5432?',
+  'enabled' => true,
+)
+Request URL: /cake-FMC/tabela
+Stack Trace:
+#0 C:\web\htdocs\cake-FMC\lib\Cake\Model\Datasource\DboSource.php(262): Postgres->connect()
+#1 C:\web\htdocs\cake-FMC\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\web\htdocs\cake-FMC\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\web\htdocs\cake-FMC\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\web\htdocs\cake-FMC\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\web\htdocs\cake-FMC\app\View\Elements\login.ctp(6): FormHelper->create('User', Array)
+#9 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#10 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#11 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(1191): View->_render('C:\web\htdocs\c...', Array)
+#12 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(408): View->_renderElement('C:\web\htdocs\c...', Array, Array)
+#13 C:\web\htdocs\cake-FMC\app\View\Elements\header.ctp(9): View->element('login')
+#14 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#15 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#16 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(1191): View->_render('C:\web\htdocs\c...', Array)
+#17 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(408): View->_renderElement('C:\web\htdocs\c...', Array, Array)
+#18 C:\web\htdocs\cake-FMC\app\View\Layouts\frontend.ctp(49): View->element('header')
+#19 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(931): include('C:\web\htdocs\c...')
+#20 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(893): View->_evaluate('C:\web\htdocs\c...', Array)
+#21 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(525): View->_render('C:\web\htdocs\c...')
+#22 C:\web\htdocs\cake-FMC\lib\Cake\View\View.php(470): View->renderLayout('', 'frontend')
+#23 C:\web\htdocs\cake-FMC\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#24 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#25 C:\web\htdocs\cake-FMC\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FrontendController), Object(CakeRequest), Object(CakeResponse))
+#26 C:\web\htdocs\cake-FMC\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#27 {main}
+2013-10-04 10:45:03 Error: Fatal Error (4): syntax error, unexpected '>' in [C:\web\htdocs\cake-FMC\app\View\Elements\header.ctp, line 23]
+2013-10-04 10:45:03 Error: [InternalErrorException] Internal Server Error
+Request URL: /cake-FMC/participe
+Stack Trace:
+#0 C:\web\htdocs\cake-FMC\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\web\htdocs\c...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\web\htdocs\c...', 23, Array)
+#2 C:\web\htdocs\cake-FMC\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\web\htdocs\c...', 23, Array)
+#3 C:\web\htdocs\cake-FMC\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}

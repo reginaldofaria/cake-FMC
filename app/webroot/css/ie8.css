@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+
+.ranking table td.regional span {
+	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2.9);
+}

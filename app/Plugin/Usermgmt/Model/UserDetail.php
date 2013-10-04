@@ -35,55 +35,41 @@ class UserDetail extends UserMgmtAppModel {
 	var $validate = array();
 	function RegisterValidate() {
 		$validate1 = array(
-			'gender'=> array(
-				'mustSelect'=>array(
-					'rule' => array('comparison', '!=', ''),
-					'message'=> __('Please select gender'),
-					'last'=>true)
-				),
-			'marital_status'=> array(
-				'mustSelect'=>array(
-					'rule' => array('comparison', '!=', ''),
-					'message'=> __('Please select marital status'),
-					'last'=>true)
-				),
-			'cellphone'=> array(
-				'mustValid'=>array(
-					'rule' => array('cellphone'),
-					'message'=> __('Please enter valid cellphone no'),
-					'last'=>true)
-				),
-			'bday'=> array(
-				'mustDate'=>array(
-					'rule' => array('date', 'ymd'),
-					'allowEmpty' => true,
-					'message'=> __('Please select valid birthday date'),
-					'last'=>true)
-				),
-			'photo'=> array(
-				'mustValid'=>array(
-					'rule' => array('extension', array('gif', 'jpeg', 'png', 'jpg', '')),
-					'message'=> __('Please supply a valid image'),
-					'last'=>true)
-				)
+				'gender'=> array(
+					'mustSelect'=>array(
+						'rule' => array('comparison', '!=', ''),
+						'message'=> __('Please select gender'),
+						'last'=>true)
+					),
+				'marital_status'=> array(
+					'mustSelect'=>array(
+						'rule' => array('comparison', '!=', ''),
+						'message'=> __('Please select marital status'),
+						'last'=>true)
+					),
+				'cellphone'=> array(
+					'mustValid'=>array(
+						'rule' => array('cellphone'),
+						'message'=> __('Please enter valid cellphone no'),
+						'last'=>true)
+					),
+				'bday'=> array(
+					'mustDate'=>array(
+						'rule' => array('date', 'ymd'),
+						'allowEmpty' => true,
+						'message'=> __('Please select valid birthday date'),
+						'last'=>true)
+					),
+				'photo'=> array(
+					'mustValid'=>array(
+						'rule' => array('extension', array('gif', 'jpeg', 'png', 'jpg', '')),
+						'message'=> __('Please supply a valid image'),
+						'last'=>true)
+					)
 			);
 		$this->validate=$validate1;
 		return $this->validates();
 	}
-	
-	function ParticipePhotoValidate(){
-		$validate2 = array(
-			'photo'=> array(
-				'mustValid'=>array(
-					'rule' => array('extension', array('gif', 'jpeg', 'png', 'jpg', '')),
-					'message'=> __('Please supply a valid image'),
-					'last'=>true)
-			)
-		);
-		$this->validate=$validate2;
-		return $this->validates();
-	}
-	
 	function multipleValidate() {
 		$validate1 = array(
 				'bday'=> array(

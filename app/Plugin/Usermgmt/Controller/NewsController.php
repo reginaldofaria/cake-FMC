@@ -119,7 +119,6 @@ class NewsController extends UserMgmtAppController {
 				$news_rss['title'] = $item->title;
 				$news_rss['content'] = $item->description . "<br /><a href='$item->link' title='$item->title' target='new'>$item->link</a>";
 				$news_rss['pubDate'] = $item->pubDate;
-				$news_rss['link'] = $item->link;
 				$news_rss['date_add'] = date('Y/m/d');
 				$news_rss['active'] = false;
 				$news_rss['rss'] = true;

@@ -90,7 +90,7 @@ class SalesController extends UserMgmtAppController {
  * @return void
  */
 	public function add() {
-		$users = $this->Sale->User->getAllUsersWithUserIds('', array('User.user_group_id' => DEFAULT_GROUP_ID));
+		$users = $this->Sale->User->getAllUsersWithUserIds('', array('User.user_group_id' => GUEST_GROUP_ID));
 		$products = $this->Sale->Product->getAllProducts();
 		$this->set(compact('users', $users));
 		$this->set(compact('products', $products));
@@ -110,7 +110,7 @@ class SalesController extends UserMgmtAppController {
 				}
 			} else {
 					$this->Sale->save($this->request->data,false);
-					$this->Session->setFlash(__('The sale has been saved'));
+					$this->Session->setFlash(__('The game has been saved'));
 					$this->redirect(array('action' => 'index'));					
 			}
 		}		
@@ -126,7 +126,7 @@ class SalesController extends UserMgmtAppController {
 	public function edit($id=null) {
 		$page = (isset($this->request->params['named']['page'])) ? $this->request->params['named']['page'] : 1;
 		if (!empty($id)) {
-			$users = $this->Sale->User->getAllUsersWithUserIds('', array('User.user_group_id' => DEFAULT_GROUP_ID));
+			$users = $this->Sale->User->getAllUsersWithUserIds('', array('User.user_group_id' => GUEST_GROUP_ID));
 			$products = $this->Sale->Product->getAllProducts();
 			$this->set(compact('users', $users));
 			$this->set(compact('products', $products));
@@ -147,7 +147,7 @@ class SalesController extends UserMgmtAppController {
 				} else {
 					if ($saleValidate){
 						$this->Sale->save($this->request->data,false);
-						$this->Session->setFlash(__('The sale has been saved'));
+						$this->Session->setFlash(__('The game has been saved'));
 						$this->redirect(array('action'=>'edit', $id, 'page'=>$page));
 					}
 				}
