@@ -36,7 +36,8 @@ class User extends UserMgmtAppModel {
 	 *
 	 * @var array
 	 */
-	var $hasOne = array('Usermgmt.UserDetail', 'Usermgmt.Resale');
+	public $hasOne = array('Usermgmt.UserDetail');
+	public $hasMany = array('Usermgmt.Sale');
 	/**
 	 * model validation array
 	 *

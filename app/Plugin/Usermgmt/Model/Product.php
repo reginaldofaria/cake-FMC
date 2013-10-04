@@ -12,6 +12,7 @@ class Product extends UserMgmtAppModel {
  * @var string
  */
 	public $displayField = 'name';
+	
 
 /**
  * Validation rules

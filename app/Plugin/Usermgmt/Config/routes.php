@@ -72,12 +72,12 @@ Router::connect('/permissionSubGroupMatrix', array('plugin' => 'usermgmt', 'cont
 Router::connect('/allEmailTemplates', array('plugin' => 'usermgmt', 'controller' => 'user_email_templates', 'action' => 'index'));
 Router::connect('/allEmailSignatures', array('plugin' => 'usermgmt', 'controller' => 'user_email_signatures', 'action' => 'index'));
 /******************FRONTEND*************/
-Router::connect('/', array('controller' => 'Frontend', 'action' => 'index'));
-Router::connect('/participe', array('controller' => 'Frontend', 'action' => 'participe'));
-Router::connect('/ranking', array('controller' => 'Frontend', 'action' => 'ranking'));
-Router::connect('/regulamento', array('controller' => 'Frontend', 'action' => 'regulamento'));
-Router::connect('/campeao', array('controller' => 'Frontend', 'action' => 'campeao'));
-Router::connect('/login', array('controller' => 'Frontend', 'action' => 'login'));
+Router::connect('/', array('plugin' => 'usermgmt','controller' => 'frontend', 'action' => 'index'));
+Router::connect('/participe', array('plugin' => 'usermgmt', 'controller' => 'frontend', 'action' => 'participe'));
+Router::connect('/ranking', array('plugin' => 'usermgmt', 'controller' => 'frontend', 'action' => 'ranking'));
+Router::connect('/regulamento', array('plugin' => 'usermgmt', 'controller' => 'frontend', 'action' => 'regulamento'));
+Router::connect('/campeao', array('plugin' => 'usermgmt', 'controller' => 'frontend', 'action' => 'campeao'));
+Router::connect('/entrar', array('plugin' => 'usermgmt', 'controller' => 'frontend', 'action' => 'entrar'));
 
 
 

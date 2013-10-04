@@ -69,5 +69,6 @@ class Sale extends UserMgmtAppModel {
 			'order' => ''
 		)
 	);*/
-	var $hasOne = array('Usermgmt.User', 'Usermgmt.Product');
+	public $hasOne = array('Usermgmt.User', 'Usermgmt.Product');
+	
 }
